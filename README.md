@@ -8,6 +8,8 @@ Some experts may go a step further, and contribute to a gap-analysis or requirem
 
 Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work supports the development of the [matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) indicating hot-spots for language support.
 
+Note that existing groups are already working on support for languages written with the [Arabic](https://github.com/w3c/alreq) and [Ethiopic](https://github.com/w3c/elreq) scripts.  That work will not be duplicated here.
+
 ### Documents
 - TBD
 
