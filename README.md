@@ -18,7 +18,7 @@ Note that existing groups are already working on support for languages written w
 Please use the [GitHub issue list](https://github.com/w3c/afrlreq/issues) to report issues for language support, for discussions, and to send feedback about documents.
 
 ### Following
-Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-afr](https://lists.w3.org/Archives/Public/public-i18n-afr/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to African writing systems. (Please use github issues rather than the mailing list to send feedback.)
+Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-africa](https://lists.w3.org/Archives/Public/public-i18n-africa/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to African writing systems. (Please use github issues rather than the mailing list to send feedback.)
 
 You can find a list of open issues, including those from Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=africa) page. (That link applies an africa filter.)
 
