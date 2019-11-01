@@ -2,9 +2,9 @@
 
 This repository exists to allow a network of experts to share information about gaps and requirements for support of African-origin  languages and script on the Web and in eBooks. 
 
-The main problem we seem to face at the moment is that experts don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem. 
+It aims to address the problem that experts don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem. 
 
-Some experts may go a step further, and contribute to a gap-analysis or requirements document for a given script.
+Some experts will hopefully go a step further, and contribute to a gap-analysis or requirements document for a given script.
 
 Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work supports the development of the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.  You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=afrlreq) page. (That link applies an `afrlreq` filter.)
 
