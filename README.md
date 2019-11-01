@@ -6,7 +6,7 @@ It aims to address the problem that experts don't know how to tell the W3C what 
 
 Some experts will hopefully go a step further, and contribute to a gap-analysis or requirements document for a given script.
 
-Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work supports the development of the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.  You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=afrlreq) page. (That link applies an `afrlreq` filter.)
+Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.  You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=afrlreq) page. (That link applies an `afrlreq` filter.)
 
 Note that existing groups are already working on support for languages written with the [Arabic](https://github.com/w3c/alreq) and [Ethiopic](https://github.com/w3c/elreq) scripts.  That work will not be duplicated here.
 
@@ -17,7 +17,7 @@ Note that existing groups are already working on support for languages written w
 ### Feedback
 Please use the [GitHub issue list](https://github.com/w3c/afrlreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
 
-Note: The public-i18n-africa mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
+Note that the public-i18n-africa mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
 
 
 ### Participate
@@ -36,6 +36,8 @@ Chair: TBA • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 
 
 ### Links
+- [Github issues](https://github.com/w3c/afrlreq/issues)
+- [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=afrlreq)
 - Charter (tbd)
 - Action tracker (tbd)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
@@ -46,7 +48,7 @@ Chair: TBA • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 
 ### Links to background information
 The following information describes work going on at the W3C to support languages on the Web.
-- [Language support heatmap](http://w3c.github.io/typography/gap-analysis/language-matrix.html)
+- [Language support heatmap (matrix)](http://w3c.github.io/typography/gap-analysis/language-matrix.html)
 - [Analysing support for text layout on the Web](https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web)
 - [Overview of language enablement work in progress](https://www.w3.org/International/layout)
 - [Setting up a Gap Analysis Project](https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project)
