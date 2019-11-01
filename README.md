@@ -1,6 +1,6 @@
 # African Language Enablement
 
-This repository exists to allow a network of experts to share information about gaps and requirements for support of African-origin  languages and script on the Web and in eBooks. 
+Though this group and repository experts explore gaps & requirements for the support of African-origin languages on the Web and in eBooks. 
 
 It aims to address the problem that experts don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem. 
 
@@ -32,7 +32,8 @@ You can participate in the task force work at various levels. In order of increa
 
 ### Contacts
 
-Chair: TBA • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+Chair: TBA
+W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 
 
 ### Links
