@@ -23,7 +23,7 @@ Note that the public-i18n-africa mailing list is used to send notification diges
 ### Participate
 You can participate in the task force work at various levels. In order of increasing commitment, these include Follower, Contributor, Participant, Editor, and Chair. [Find your level](https://github.com/w3c/i18n-activity/wiki/Layout-task-force-roles).
 
-**To just follow the work:** Rather than 'Watch' this repository, subscribe to the [public-i18n-africa](https://lists.w3.org/Archives/Public/public-i18n-africa/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the African writing systems.
+**To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-arabic-request@w3.org?subject=subscribe) to the [public-i18n-africa](https://lists.w3.org/Archives/Public/public-i18n-africa/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the African writing systems.
 
 **To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -42,6 +42,7 @@ Chair: TBA • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 - Action tracker (tbd)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html)
+- (See also the github and editorial guidelines below)
 - Meeting info (tbd)
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-africa/)
 
