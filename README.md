@@ -30,6 +30,10 @@ You can participate in the task force work at various levels. In order of increa
 **To become a participant, editor, or chair:** contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
 
+### Contacts（連絡先）
+
+Chair: TBA • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+
 
 ### Links
 - Charter (tbd)
