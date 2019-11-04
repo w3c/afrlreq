@@ -1,10 +1,8 @@
 # African Layout Task Force (afrlreq)
 
-The Web and eBooks need to support languages used in Africa. The afrlreq group uses this repository to explore and discuss gaps & requirements for those languages.
+This task force explores gaps in African language support on the Web and in eBooks, and documents requirements.
 
-It aims to address the problem that experts don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem. 
-
-A standard framework is provided so that some experts can go a step further and document the gaps and requirements with a view to enabling better support for African languages.
+It aims to address the problem that experts don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem.
 
 Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.  You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=afrlreq) page. (That link applies an `afrlreq` filter.)
 
