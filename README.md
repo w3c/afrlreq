@@ -8,7 +8,7 @@ Topics for discussion are suggested by [the gap-analysis template](http://w3c.gi
 
 Note that existing groups are already working on support for languages written with the [Arabic](https://github.com/w3c/alreq) and [Ethiopic](https://github.com/w3c/elreq) scripts.  That work will not be duplicated here.
 
-For more details, see the [group's charter](https://w3c.github.io/afrlreq/charter/).
+For more details about scope, deliverables, work methods, etc., see the [group's charter](https://w3c.github.io/afrlreq/charter/).
 
 ### Documents
 - TBD
