@@ -39,13 +39,13 @@ W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 ### Links
 - [Github issues](https://github.com/w3c/afrlreq/issues)
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=afrlreq)
-- Charter (tbd)
-- Action tracker (tbd)
+- [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-africa/)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html)
 - (See also the github and editorial guidelines below)
 - Meeting info (tbd)
-- [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-africa/)
+- [Charter](https://w3c.github.io/afrlreq/charter/)
+- Action tracker (tbd)
 
 
 ### Links to background information
