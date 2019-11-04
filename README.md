@@ -25,7 +25,7 @@ You can participate in the task force work at various levels. In order of increa
 
 **To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-africa-request@w3.org?subject=subscribe) to the [public-i18n-africa](https://lists.w3.org/Archives/Public/public-i18n-africa/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the African writing systems.
 
-**To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
+**To contribute content:** All contributors must read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
 **To become a participant, editor, or chair:** contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
