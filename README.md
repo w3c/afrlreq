@@ -2,7 +2,7 @@
 
 This task force explores gaps in African language support on the Web and in eBooks, and documents requirements.
 
-It aims to address the problem that experts don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem.
+It aims to address the problem that experts don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise.
 
 Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.  You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=afrlreq) page. (That link applies an `afrlreq` filter.)
 
@@ -32,8 +32,8 @@ You can participate in the task force work at various levels. In order of increa
 
 ### Contacts
 
-Chair: TBA
-W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+- Chair: TBA
+- W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 
 
 ### Links
