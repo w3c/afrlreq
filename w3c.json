@@ -1,5 +1,6 @@
 {
-    "contacts":  "rishida"
-,   "repo-type":  "note"
-,   "policy": "restricted"
+  "group":     32113
+, "contacts":  [ "r12a" ]
+, "policy":    "open"
+, "repo-type": "note"
 }
