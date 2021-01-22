@@ -11,7 +11,8 @@ Note that existing groups are already working on support for languages written w
 For more details about scope, deliverables, work methods, etc., see the [group's charter](https://w3c.github.io/afrlreq/charter/).
 
 ### Documents
-- TBD
+- [Adlam Gap Analysis](https://w3c.github.io/afrlreq/gap-analysis/adlm-gap)
+- [N’Ko Gap Analysis](https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap)
 
 
 ### Feedback
