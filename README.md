@@ -2,7 +2,7 @@
 
 This is the place to explore gaps in African language support on the Web and in eBooks, and to document requirements.
 
-We aim to address the problem that experts don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise.
+We aim to address the problem that local users don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise.
 
 Topics for discussion are suggested by [the gap-analysis template](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://www.w3.org/International/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.
 
