@@ -41,8 +41,7 @@ You can participate in the task force work at various levels. In order of increa
 ### Links to practical help
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-africa/)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
-- [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html)
-- (See also the links for editors below)
+- [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html) (See also the links for editors below)
 - Action tracker (tbd)
 - Meeting info (tbd)
 
@@ -52,6 +51,7 @@ The following information describes work going on at the W3C to support language
 - [Language support heatmap (matrix)](https://www.w3.org/International/typography/gap-analysis/language-matrix.html)
 - [Analysing support for text layout on the Web](https://www.w3.org/International/i18n-drafts/pages/language_framework_overview.html)
 - [Overview of language enablement work in progress](https://www.w3.org/International/i18n-drafts/nav/languagedev)
+- [Get involved with Language Enablement](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation)
 - [Setting up a Gap Analysis Project](https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project)
 - [Internationalization Sponsorship Program](https://www.w3.org/International/sponsorship/)
 
