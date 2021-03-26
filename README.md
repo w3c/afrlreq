@@ -13,8 +13,8 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 
 
 ### Documents
-- [**Adlam Gap Analysis**](https://www.w3.org/TR/adlm-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/adlm-gap) • [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/adlm-gap.html) • [*Edit on Github*](https://github.com/w3c/afrlreq/labels/doc%3Aadlm)
-- [**N’Ko Gap Analysis**](https://www.w3.org/TR/nkoo-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/nkoo-gap)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/nkoo-gap.html) • [*Edit on Github*](https://github.com/w3c/afrlreq/labels/doc%3Ankoo)
+- [**Adlam Gap Analysis**](https://www.w3.org/TR/adlm-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/adlm-gap) • [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/adlm-gap.html) • [*Edit/comment on Github*](https://github.com/w3c/afrlreq/labels/doc%3Aadlm)
+- [**N’Ko Gap Analysis**](https://www.w3.org/TR/nkoo-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/nkoo-gap)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/nkoo-gap.html) • [*Edit/comment on Github*](https://github.com/w3c/afrlreq/labels/doc%3Ankoo)
 
 
 ### Feedback
