@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>N'Ko Layout Requirements</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" async="" class="remove">
+</script>
+  <script class="remove">
+  var respecConfig = {
+      // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
+      specStatus:           "ED",
+      //publishDate:  		"2020-06-16",
+      //previousPublishDate:  "2014-12-16",
+      //previousMaturity:  "FPWD",
+
+      noRecTrack:           true,
+      shortName:            "ilreq-nkoo",
+      copyrightStart:       "2023",
+      edDraftURI:           "https://w3c.github.io/afrlreq/nkoo/",
+
+      // if this is a LCWD, uncomment and set the end of its review period
+      // lcEnd: "2009-08-05",
+
+      // editors, add as many as you like
+      // only "name" is required
+      editors:  [
+        { name: "Richard Ishida", company: "W3C", w3cid: 3439 }
+      ],
+
+
+	  github: "w3c/afrlreq",
+	  group: "i18n",
+	  };
+  </script>
+  <link rel="stylesheet" href="local.css">
+</head>
+
+<body>
+<div id="abstract">
+<p>This document describes requirements for the layout and presentation of text in the  koiné called Kángbɛ, using the N'Ko script when they are used by Web standards and technologies, such as HTML, CSS, Mobile Web, Digital Publications, and Unicode.</p>
+</div>
+
+<div id="sotd">
+<p style="font-weight: bold;">This early draft has not yet been through any review process. Please do not rely on the contents.</p>
+<p>This document describes the basic requirements layout and text support on the Web and in eBooks for the koiné called Kángbɛ, using the N'Ko script. These requirements provide information for Web technologies such as CSS, HTML and digital publications about how to support users of the N'Ko script. Currently the document focuses on N'Ko as used for the koiné called Kángbɛ. The information here is developed in conjunction with a <a href="https://www.w3.org/TR/guru-gap/">document that summarises gaps</a> in support on the Web for  N'Ko.</p>
+<p>The editor's draft of this document is being developed as part of the <a href="https://github.com/w3c/iip/">India Language Enablement</a> program of the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>. It will be published by the <a href="https://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
+</div>
+
+<section id="h_introduction">
+<h2>Introduction</h2>
+
+
+<section id="h_about_this_document">
+<h3>About this document</h3>
+
+<p>This document provides information about the  N'Ko script as used for the koiné called Kángbɛ. </p>
+
+<p>This document should contain no reference to a particular technology. For example, it should not say &quot;CSS does/doesn't do such and such&quot;, and it should not describe how a technology, such as CSS, should implement the requirements. It is technology agnostic, so that it will be evergreen, and it simply describes how the script works. The gap analysis document is the appropriate place for all kinds of technology-specific information.</p>
+</section>
+
+
+
+
+
+
+
+
+<section id="h_gap_analysis">
+<h3>Gap analysis</h3>
+
+<p>This document is pointed to by a separate document, <a href="https://www.w3.org/TR/nkoo-gap/">N'Ko Gap Analysis</a>, which describes gaps in support for N'Ko on the Web, and prioritises and describes the impact of those gaps on the user.</p>
+
+<p>Wherever an unsupported feature is indentified through the gap analysis process, the requirements for that feature need to be documented. Those requirements can be described here.</p>
+
+<p>As gaps in support for N'Ko are captured, the gap is brought to the attention of the relevant spec developer or browser implementation community. The progress of such work is tracked in the <a href="https://github.com/w3c/i18n-activity/projects/3?card_filter_query=label%3Ax%3Aguru">Gap Analysis Pipeline</a>.</p>
+</section>
+
+
+
+
+
+
+<section id="h_info_requests">
+<h3>Other related resources</h3>
+
+<p>The initial material for this document was an edited extract from the page <a href="https://r12a.github.io/scripts/nkoo/nqo.html">N’Ko script orthography notes</a>. That page contains additional details about character usage and how the writing system works, plus interactive information, which are not available here.</p>
+
+<p>The document <a href="https://www.w3.org/TR/typography/">Language enablement index</a> points to this document and others, and provides a central location for developers and implementers to find information related to various scripts.</p>
+
+<p>The W3C also maintains a tracking system that  has links to GitHub issues in W3C repositories. There are separate links for (a) requests from developers to the user community for information about how scripts/languages work, (b) issues raised against a spec, and (c) browser bugs.  For example, you can find out <a href="https://w3c.github.io/i18n-activity/textlayout/?filter=type-info-request">what information developers are currently seeking</a>, and the resulting list can also be filtered by script.</p>
+</section>
+</section>
+
+
+
+
+
+
+
+<section id="h_script_overview">
+<h2>N’Ko script overview</h2>
+
+
+
+<p>The N’Ko script  is an <a class="termref" href="../glossary/index.html#alphabet">alphabet</a>. Both consonants and vowels are indicated by letters.</p>
+
+<p>N’Ko text is written right-to-left in horizontal lines. Unlike other RTL scripts, such as Arabic and Hebrew, numbers  are <em>also</em> written right-to-left.</p>
+
+<p>Words are separated by spaces.</p>
+
+<p>The script is normally cursive, but in certain circumstances a non-joining font style may be used.</p>
+
+<p class="addToConsonants">N’Ko has 19 native consonant letters. Use of 3 different diacritics results in letters for 22 more sounds used in foreign and loan words (mostly French or Arabic). There is also a nasal syllabic, and 2 'abstract' characters</p>
+
+<p class="addToConsonants">N’Ko doesn't have corresponding letters for <span class="transc">g</span>, <span class="transc">ŋ</span>, and <span class="transc">z</span> used in the Latin orthographies of Manding languages. Also, plurals that are written by appending a <span class="ipa">w</span> to a word in Bamanan are generally written in N’Ko by  adding a free-standing particle <span class="ex" lang="nqo">ߟߎ߬</span> <span class="transc">lù</span>.</p>
+
+<p class="addToConsonants">An unusual feature is that if two adjacent consonants are followed by the same vowel, the vowel is omitted after the first consonant.</p>
+
+<p class="addToVowels">N’Ko has 7  vowel letters. A diacritic is used to create 3 more letters for foreign sounds.</p>
+<p class="addToVowels">Another diacritic produces nasalisation of the vowel sound.</p>
+
+<p class="addToVowels">N’Ko also has a letter to indicate the absence of a vowel, which is used regularly.</p>
+
+<p class="addToVowels">N’Ko has 7 combining tone marks and 2 tone letters. Several of these have more than one use, indicating vowel length in addition to tone.</p>
+
+<p>N’Ko has it's own set of digits, which, unlike Arabic, are written right-to-left.</p>
+</section>
+
+
+
+
+
+
+
+<section>
+<h2 id="h_text_direction">Text direction</h2>
+
+<p>N’Ko text is written horizontally, with successive lines progressing down the page.</p>
+
+<p>Inline text is right-to-left in the main but, as in most right-to-left scripts,  embedded  text in left-to-right scripts is written left-to-right (producing 'bidirectional' text). However, like  Adlam but unlike Arabic, numbers are also written with digits in
+<em>right-to-left</em> order.</p>
+
+
+<figure id="fig_bidi">
+<img src="images/bidi.png" alt="ߛߌ߲ߘߌߓߊ߮ ߣߊ߯ߣߌ߲ߣߊ߲߫: Karl Marks (߁߈߁߈-߁߈߈߁)" class="ex" lang="nqo" data-notes="28px noto sans nko" data-source="http://cormand.huma-num.fr/maninkabiblio/ouvrages/konde-delondoya.pdf (modified)"> 
+<figcaption>N’Ko-script words are read right-to-left, starting from the right of this line, but 'Karl Marx' is read left-to-right. The numbers <bdi></bdi> (1818-1881) and the range, on the other hand are written right-to-left.</figcaption>
+</figure>
+
+
+<p>The Unicode Bidirectional Algorithm automatically takes care of the ordering for all the text in [[[#fig_bidi]]], as long as the 'base direction' is set to RTL. In HTML this can be set using the <code>dir</code> attribute, or in plain text using formatting controls (see [[[#directioncontrols]]]).</p>
+
+<p>If the base direction is not set appropriately, the directional runs will be ordered incorrectly, as shown in [[[#fig_bidi_no_base_direction]]].</p>
+
+
+<figure id="fig_bidi_no_base_direction">
+<p dir="rtl" lang="nqo" style="font-size: 1rem; white-space: nowrap; text-align: center;">ߦߊ߬ߣߌ߬ ߒ ߧߋ߫ ߘߏ߫ ߝߐ߫ <span style="color:chocolate;">Marks</span> ߡߙߌߦߊ ߞߊ߲߬ ߸ ߒ ߧߋ߫ ߛߐ߰ ߟߊ߫ ߎߖߊߓ ߞߎߡߊߘߋ ߢߌ߲߬ ߠߎ߫ ߝߊ߬ߛߊߙߌ ߟߋ߬ ߡߊ߬: </p>
+<p lang="nqo" style="font-size: 1rem; white-space: nowrap; text-align: center;">ߦߊ߬ߣߌ߬ ߒ ߧߋ߫ ߘߏ߫ ߝߐ߫ <span style="color:chocolate;">Marks</span> ߡߙߌߦߊ ߞߊ߲߬ ߸ ߒ ߧߋ߫ ߛߐ߰ ߟߊ߫ ߎߖߊߓ ߞߎߡߊߘߋ ߢߌ߲߬ ߠߎ߫ ߝߊ߬ߛߊߙߌ ߟߋ߬ ߡߊ߬: </p>
+<figcaption class="instructions">The exact same sequence of characters with the base direction set to RTL (top), and with no  base direction set on this LTR page (bottom).</figcaption>
+</figure>
+
+
+<p>For other aspects of dealing with right-to-left writing systems see the following sections:</p>
+<ul>
+<li>[[[#directioncontrols]]]</li>
+<li>[[[#breaking_latin]]]</li>
+<li>[[[#mirrored_characters]]]</li>
+<li>[[[#page]]]</li>
+</ul>
+
+<p>For more information about how directionality and base direction work, see <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics.en">Unicode Bidirectional Algorithm basics</a>. For information about plain text formatting characters see <a href="https://www.w3.org/International/questions/qa-bidi-unicode-controls.en">How to use Unicode controls for bidi text</a>. And for working with markup in HTML, see <a href="https://www.w3.org/International/tutorials/bidi-xhtml/">Creating HTML Pages in Arabic, Hebrew and Other Right-to-left Scripts</a>.</p>
+
+
+
+
+
+
+
+<section id="directioncontrols">
+<h3>Managing text direction</h3>
+
+<p>Unicode provides a set of 10 formatting characters that can be used to control the direction of text when displayed. These characters have no visual form in the rendered text, however text editing applications may have a way to show their location.</p>
+
+<p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202B;</span><img  src="images/chars/202B.png" alt="RLE" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+202B RIGHT-TO-LEFT EMBEDDING</span>]</span> (<span class="uname">RLE</span>), <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202A;</span><img  src="images/chars/202A.png" alt="LRE" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+202A LEFT-TO-RIGHT EMBEDDING</span>]</span> (<span class="uname">LRE</span>), and <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202C;</span><img  src="images/chars/202C.png" alt="PDF" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+202C POP DIRECTIONAL FORMATTING</span>]</span> (<span class="uname">PDF</span>) are in widespread use to set the base direction of a range of characters. <span class="uname">RLE/LRE</span> comes at the start, and  <span class="uname">PDF</span> at the end of a range of characters for which the base direction is to be set.</p>
+
+<p class="info">In Unicode 6.1, the Unicode Standard added a set of characters which do the same thing but also isolate the content from surrounding characters, in order to avoid spillover effects. They are <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x2067;</span><img  src="images/chars/2067.png" alt="RLI" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+2067 RIGHT-TO-LEFT ISOLATE</span>]</span> (<span class="uname">RLI</span>), <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x2066;</span><img  src="images/chars/2066.png" alt="LRI" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+2066 LEFT-TO-RIGHT ISOLATE</span>]</span> (<span class="uname">LRI</span>), and <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x2069;</span><img  src="images/chars/2069.png" alt="PDI" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+2069 POP DIRECTIONAL ISOLATE</span>]</span> (<span class="uname">PDI</span>).<strong> The Unicode Standard recommends that these be used instead of RLE/LRE...PDF</strong>. </p>
+
+<p>There is also <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x2068;</span><img  src="images/chars/2068.png" alt="PDI" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+2068 FIRST STRONG ISOLATE</span>]</span> (<span class="uname">FSI</span>), used initially to set the base direction according to the first recognised strongly-directional character.</p>
+
+<p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x200F;</span><img  src="images/chars/200F.png" alt="RLM" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+200F RIGHT-TO-LEFT MARK</span>]</span> (<span class="uname">RLM</span>)  and <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x200E;</span><img  src="images/chars/200E.png" alt="LRM" style="vertical-align:middle; width:2rem; height:2rem;"> [<span class="uname">U+200E LEFT-TO-RIGHT MARK</span>]</span> (<span class="uname">LRM</span>)  are invisible characters with strong directional properties that are also sometimes used to produce the correct ordering of text.</p>
+
+<p>For more information about how to use these formatting characters see <a href="https://www.w3.org/International/questions/qa-bidi-unicode-controls.en">How to use Unicode controls for bidi text</a>. Note, however, that when writing HTML you should generally use markup rather than these control codes. For information about that, see <a href="https://www.w3.org/International/tutorials/bidi-xhtml/">Creating HTML Pages in Arabic, Hebrew and Other Right-to-left Scripts</a>.</p>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="shaping">
+<h2>Glyph shaping &amp; positioning</h2>
+
+<p>The orthography has no case distinction, and no special transforms are needed to convert between characters.</p>
+
+
+
+
+
+<section id="writing_styles">
+<h3>Font styles</h3>
+
+<p>N’Ko is usually cursive, ie. letters in a word are joined up. </p>
+<p>Non-cursive fonts are sometimes used, mainly as display fonts for book and article titles.<tt>u</tt></p>
+
+
+<figure id="unjoined" class="sideCaption">
+<img class="ex" lang="nqo" src="images/unjoined.png" alt="ߝߘߊ߬ߝߌ߲߬߬ߠߊ߫ ߕߟߋ߬ߓߋ ߥߊߘߌ߫ ߞߎߘߊ" data-src="http://cormand.huma-num.fr/maninkabiblio/periodiques/silabosoona5.pdf" style="width: 350px;">
+<figcaption>An example of unjoined text used for the title of a section. The body text is joined.</figcaption>
+</figure>
+
+
+<p class="observation"><span class="leadin">Observation:</span> Throughout the <a href="http://cormand.huma-num.fr/maninkabiblio/periodiques/silabosoona5.pdf">source of the above figure</a> the font used applies short baseline extensions to certain characters. For example, <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ</span></span> looks like <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ‍ </span></span>. The extension doesn't cause any join with adjacent characters.</p>
+</section>
+  
+
+
+
+  
+
+
+
+
+
+
+<section id="cursive">
+<h3>Cursive text</h3>
+<p>When N’Ko is cursive (see [[[#writing_styles]]]), letters in a word are joined up. Fonts need to produce the appropriate joining form for a letter, according to its visual context, but the code point remains the same.  This results in four different glyphs for most letters (including an isolated glyph).</p>
+
+
+<figure id="fig_cursive" class="sideCaption">
+<img src="images/fig_cursive.svg" class="ex" lang="nqo" alt="ߕߟߋ߬ߓߊ߰ߓߟߐߟߐ" data-notes="Noto Sans Nko" style="height: 5rem;">
+<figcaption>Cursive connections in a word. The highlights show both medial and final forms of <span lang="nqo">ߐ</span>.</figcaption>
+</figure>
+
+
+<p>Unlike some other cursive scripts, the cursive treatment doesn't produce significant variations of the essential part of the glyph for a character.</p>
+
+<p>All letters join on both sides.</p>
+
+
+
+
+
+
+
+
+<section id="cursive_shaping">
+<h4>Cursive joining forms</h4>
+
+<p>Unlike Arabic or Syriac,  joining forms only differ by the addition of a small baseline extension. Also, whereas Arabic and Syriac re-use a number of basic shapes to create additional letters by adding diacritics, in N’Ko each letter shape is different.  [[[#fig_joining_forms]]] shows  the basic shapes in N’Ko and what their joining forms look like.</p>
+
+<figure id="fig_joining_forms" class="sideCaption">
+<table class="cursive_table">
+<thead>
+<tr><th>Joining side:</th><th>none</th><th>right</th><th>both</th><th>left</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D4;</span> [<span class="uname">U+07D4 NKO LETTER PA</span>]</span></th>
+<td><span lang="nqo">ߔ</span></td>
+<td><span lang="nqo">ߺߔ</span></td>
+<td><span lang="nqo">ߺߔߺ</span></td>
+<td><span lang="nqo">ߔߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D3;</span> [<span class="uname">U+07D3 NKO LETTER BA</span>]</span></th>
+<td><span lang="nqo">ߓ</span></td>
+<td><span lang="nqo">ߺߓ</span></td>
+<td><span lang="nqo">ߺߓߺ</span></td>
+<td><span lang="nqo">ߓߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D5;</span> [<span class="uname">U+07D5 NKO LETTER TA</span>]</span></th>
+<td><span lang="nqo">ߕ</span></td>
+<td><span lang="nqo">ߺߕ</span></td>
+<td><span lang="nqo">ߺߕߺ</span></td>
+<td><span lang="nqo">ߕߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D8;</span> [<span class="uname">U+07D8 NKO LETTER DA</span>]</span></th>
+<td><span lang="nqo">ߘ</span></td>
+<td><span lang="nqo">ߺߘ</span></td>
+<td><span lang="nqo">ߺߘߺ</span></td>
+<td><span lang="nqo">ߘߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D7;</span> [<span class="uname">U+07D7 NKO LETTER CHA</span>]</span></th>
+<td><span lang="nqo">ߗ</span></td>
+<td><span lang="nqo">ߺߗ</span></td>
+<td><span lang="nqo">ߺߗߺ</span></td>
+<td><span lang="nqo">ߗߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D6;</span> [<span class="uname">U+07D6 NKO LETTER JA</span>]</span></th>
+<td><span lang="nqo">ߖ</span></td>
+<td><span lang="nqo">ߺߖ</span></td>
+<td><span lang="nqo">ߺߖߺ</span></td>
+<td><span lang="nqo">ߖߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07DE;</span> [<span class="uname">U+07DE NKO LETTER KA</span>]</span></th>
+<td><span lang="nqo">ߞ</span></td>
+<td><span lang="nqo">ߺߞ</span></td>
+<td><span lang="nqo">ߺߞߺ</span></td>
+<td><span lang="nqo">ߞߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07DC;</span> [<span class="uname">U+07DC NKO LETTER GBA</span>]</span></th>
+<td><span lang="nqo">ߜ</span></td>
+<td><span lang="nqo">ߺߜ</span></td>
+<td><span lang="nqo">ߺߜߺ</span></td>
+<td><span lang="nqo">ߜߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07DD;</span> [<span class="uname">U+07DD NKO LETTER FA</span>]</span></th>
+<td><span lang="nqo">ߝ</span></td>
+<td><span lang="nqo">ߺߝ</span></td>
+<td><span lang="nqo">ߺߝߺ</span></td>
+<td><span lang="nqo">ߝߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07DB;</span> [<span class="uname">U+07DB NKO LETTER SA</span>]</span></th>
+<td><span lang="nqo">ߛ</span></td>
+<td><span lang="nqo">ߺߛ</span></td>
+<td><span lang="nqo">ߺߛߺ</span></td>
+<td><span lang="nqo">ߛߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07E4;</span> [<span class="uname">U+07E4 NKO LETTER HA</span>]</span></th>
+<td><span lang="nqo">ߤ</span></td>
+<td><span lang="nqo">ߺߤ</span></td>
+<td><span lang="nqo">ߺߤߺ</span></td>
+<td><span lang="nqo">ߤߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07E1;</span> [<span class="uname">U+07E1 NKO LETTER MA</span>]</span></th>
+<td><span lang="nqo">ߡ</span></td>
+<td><span lang="nqo">ߺߡ</span></td>
+<td><span lang="nqo">ߺߡߺ</span></td>
+<td><span lang="nqo">ߡߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07E3;</span> [<span class="uname">U+07E3 NKO LETTER NA</span>]</span></th>
+<td><span lang="nqo">ߣ</span></td>
+<td><span lang="nqo">ߺߣ</span></td>
+<td><span lang="nqo">ߺߣߺ</span></td>
+<td><span lang="nqo">ߣߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07E2;</span> [<span class="uname">U+07E2 NKO LETTER NYA</span>]</span></th>
+<td><span lang="nqo">ߢ</span></td>
+<td><span lang="nqo">ߺߢ</span></td>
+<td><span lang="nqo">ߺߢߺ</span></td>
+<td><span lang="nqo">ߢߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07E5;</span> [<span class="uname">U+07E5 NKO LETTER WA</span>]</span></th>
+<td><span lang="nqo">ߥ</span></td>
+<td><span lang="nqo">ߺߥ</span></td>
+<td><span lang="nqo">ߺߥߺ</span></td>
+<td><span lang="nqo">ߥߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D9;</span> [<span class="uname">U+07D9 NKO LETTER RA</span>]</span></th>
+<td><span lang="nqo">ߙ</span></td>
+<td><span lang="nqo">ߺߙ</span></td>
+<td><span lang="nqo">ߺߙߺ</span></td>
+<td><span lang="nqo">ߙߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07DA;</span> [<span class="uname">U+07DA NKO LETTER RRA</span>]</span></th>
+<td><span lang="nqo">ߚ</span></td>
+<td><span lang="nqo">ߺߚ</span></td>
+<td><span lang="nqo">ߺߚߺ</span></td>
+<td><span lang="nqo">ߚߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07DF;</span> [<span class="uname">U+07DF NKO LETTER LA</span>]</span></th>
+<td><span lang="nqo">ߟ</span></td>
+<td><span lang="nqo">ߺߟ</span></td>
+<td><span lang="nqo">ߺߟߺ</span></td>
+<td><span lang="nqo">ߟߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07E6;</span> [<span class="uname">U+07E6 NKO LETTER YA</span>]</span></th>
+<td><span lang="nqo">ߦ</span></td>
+<td><span lang="nqo">ߺߦ</span></td>
+<td><span lang="nqo">ߺߦߺ</span></td>
+<td><span lang="nqo">ߦߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D2;</span> [<span class="uname">U+07D2 NKO LETTER N</span>]</span></th>
+<td><span lang="nqo">ߒ</span></td>
+<td><span lang="nqo">ߺߒ</span></td>
+<td><span lang="nqo">ߺߒߺ</span></td>
+<td><span lang="nqo">ߒߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07CA;</span> [<span class="uname">U+07CA NKO LETTER A</span>]</span></th>
+<td><span lang="nqo">ߊ</span></td>
+<td><span lang="nqo">ߺߊ</span></td>
+<td><span lang="nqo">ߺߊߺ</span></td>
+<td><span lang="nqo">ߊߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07CB;</span> [<span class="uname">U+07CB NKO LETTER EE</span>]</span></th>
+<td><span lang="nqo">ߋ</span></td>
+<td><span lang="nqo">ߺߋ</span></td>
+<td><span lang="nqo">ߺߋߺ</span></td>
+<td><span lang="nqo">ߋߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07CC;</span> [<span class="uname">U+07CC NKO LETTER I</span>]</span></th>
+<td><span lang="nqo">ߌ</span></td>
+<td><span lang="nqo">ߺߌ</span></td>
+<td><span lang="nqo">ߺߌߺ</span></td>
+<td><span lang="nqo">ߌߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07CD;</span> [<span class="uname">U+07CD NKO LETTER E</span>]</span></th>
+<td><span lang="nqo">ߍ</span></td>
+<td><span lang="nqo">ߺߍ</span></td>
+<td><span lang="nqo">ߺߍߺ</span></td>
+<td><span lang="nqo">ߍߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07CE;</span> [<span class="uname">U+07CE NKO LETTER U</span>]</span></th>
+<td><span lang="nqo">ߎ</span></td>
+<td><span lang="nqo">ߺߎ</span></td>
+<td><span lang="nqo">ߺߎߺ</span></td>
+<td><span lang="nqo">ߎߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07CF;</span> [<span class="uname">U+07CF NKO LETTER OO</span>]</span></th>
+<td><span lang="nqo">ߏ</span></td>
+<td><span lang="nqo">ߺߏ</span></td>
+<td><span lang="nqo">ߺߏߺ</span></td>
+<td><span lang="nqo">ߏߺ</span></td>
+</tr>
+<tr>
+<th><span class="codepoint noindex" translate="no"><span lang="nqo" dir="rtl">&#x07D0;</span> [<span class="uname">U+07D0 NKO LETTER O</span>]</span></th>
+<td><span lang="nqo">ߐ</span></td>
+<td><span lang="nqo">ߺߐ</span></td>
+<td><span lang="nqo">ߺߐߺ</span></td>
+<td><span lang="nqo">ߐߺ</span></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+<figcaption>Joining forms for  shapes that join on both sides.</figcaption>
+</figure>
+
+
+
+
+
+<section id="shapingcontrols">
+<h4>Managing glyph shaping</h4>
+
+
+<p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x200D;</span><img src="images/chars/200D.png" alt="ZWJ" style="vertical-align:middle; height:2rem;width:2rem;"> [<span class="uname">U+200D ZERO WIDTH JOINER</span>]</span> (<span class="uname">ZWJ</span>) and <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x200C;</span><img src="images/chars/200C.png" alt="ZWNJ" style="vertical-align:middle; height:2rem;width:2rem;"> [<span class="uname">U+200C ZERO WIDTH NON-JOINER</span>]</span> (<span class="uname">ZWNJ</span>) are used to control the visual joining behaviour of cursive glyphs. They are particularly useful in educational contexts. For example, the <span class="uname" dir="ltr">ZWJ</span> was used to create the shapes in [[[#fig_joining_forms]]].</p>
+
+<p><span class="uname" dir="ltr">ZWJ</span>  permits a letter to form a cursive connection without a visible neighbour.</p>
+
+<p><span class="uname" dir="ltr">ZWNJ</span> prevents two adjacent letters forming a cursive connection with each other when rendered.</p>
+
+<!--p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x034F;</span><img src="../../c/Combining_Diacritical_Marks/034F.png" alt="MVS" style="vertical-align:middle"> [<a href="/scripts/XXXXXX/block#char034F"><span class="uname">U+034F COMBINING GRAPHEME JOINER</span></a>]</span> is used in Arabic to produce special ordering of diacritics. The name is a misnomer, as it is generally used to <em>break</em> the normal sequence of diacritics.</p-->
+
+<p class="observation"><span class="leadin">Observation:</span> The <span class="uname" dir="ltr">ZWJ</span> only works on the left side of glyphs in [[[#fig_joining_forms]]] if the table cell's base direction is set to RTL.</p>
+</section>
+</section>
+</section>
+
+
+
+
+
+
+
+
+<section id="context">
+<h3>Context-based shaping &amp; positioning</h3>
+
+
+<p>The  Noto Sans NKo font changes the height of  diacritics according to the height of the base character.</p>
+
+
+<figure id="fig_diacritic_height" class="sideCaption">
+<img src="images/fig_diacritic_height.svg" class="ex" lang="nqo" alt="ߊ߬ߟߎ߬" data-notes="Noto Sans Nko" style="height:9rem;">
+<figcaption>The height of diacritics depends on the base consonant.</figcaption>
+</figure>
+
+
+<p>A base character may carry multiple combining characters.</p>
+
+
+<figure id="fig_refuse" class="sideCaption">
+<img src="images/fig_refuse.svg" class="ex" lang="nqo" alt="ߓߊ߲߬" data-notes="Noto Sans Nko" style="height:9rem;">
+<div>
+<figcaption>Multiple diacritics attached to the same base consonant.</figcaption>
+<details><summary>details</summary><p><span class="eg inline" lang="nqo">ߓߊ߲߬</span></p></details>
+</div>
+</figure>
+
+
+<p>Apart from that, no shaping is needed other than that described for cursive connections.</p>
+</section>
+
+
+
+
+
+
+
+  
+<section id="fontstyle">
+<h3>Font styling &amp; weight</h3>
+<p>N’Ko  uses italicisation and bolding.</p>
+
+<figure id="fig_bold_text" class="sideCaption">
+<img src="images/bold_text.png" alt="" data-source="http://cormand.huma-num.fr/maninkabiblio/periodiques/silabosoona5.pdf" style="width: 20rem;">
+<figcaption>An example of bolded inline text.</figcaption>
+</figure>
+
+<p>Italics may need to lean to the left, rather than to the right. Neil Patel writes:</p>
+
+<blockquote>
+<p>Formalized typographic practices for  both Adlam and N’Ko are still being developed. When [JamraPatel] reached out to both communities to see if an Italic typeface would be beneficial, both communities expressed a desire to have one. Over the past few years, as the ability to use both of these scripts more readily in computing has increased, the need to be able to set more complex copy has increased as well. Both communities see the benefit of having italic typefaces to add some semantic value to their copy. On-line N’Ko has historically used synthetic obliques for things like by-lines on articles. ...</p>
+
+<p> Since neither script had any precedent for a drawn italic typeface, we asked each community on how they would like to see it drawn. This is how N’Ko ended up with the leftward lean and Adlam with a rightward lean in our typeface. ... To my knowledge our typeface has the first drawn italicized N’Ko and Adlam, so this is all still a bit new.</p>
+</blockquote>
+
+<figure id="nko_italics" class="sideCaption">
+<p><img src="images/nko_italics.png" alt=""></p>
+<figcaption>Left-leaning italics in N’Ko.</figcaption>
+</figure>
+</section>
+</section>
+
+
+
+
+
+
+
+<section id="graphemes">
+<h2>Graphemes</h2>  
+
+
+<p>No issues are evident with regard to grapheme selection.</p>
+
+</section>
+
+
+
+
+
+
+
+
+<section id="h_characters_and_phrases">
+<h2>Structural boundaries &amp; markers</h2>
+
+
+<!--section id="h_graphemes">
+<h3 class="reviewme">Grapheme boundaries</h3>
+<p>For text operations including line breaking,  letter spacing, cursor movement, forward delete, dropped initials, and some vertical text, the basic unit of text is the syllable, not the character.</p>
+<p>For Tamil, the typographic units for these operations are generally equivalent to  grapheme clusters as defined by the Unicode Standard, ie. a single base character and all combining character that immediately follow it. For example, a Tamil word such as <span class="ex" lang="ta">யாவற்றையும்</span> (<span class="trans">yāvaṟṟaiyum</span>), would be split as shown in [[[#fig_grapheme]]].</p>
+<figure id="fig_grapheme">
+<p><img alt="Grapheme boundaries in யாவற்றையும்" src="images/graphemes.png"/></p>
+<figcaption>Grapheme cluster boundaries for the word <span class="ex" lang="ta">யாவற்றையும்</span>.</figcaption>
+</figure>
+<p>This is more straightforward than for many other Indian scripts because, rather than combining the elements of a consonant cluster into a conjunct, consonant clusters in Tamil are normally represented using the <span class="name">puḷḷi</span> dot over the  character(s) that are not followed by a vowel, eg. <span class="charExample" translate="no"><span class="ex" lang="ta">தீர்ப்பு</span> <span class="trans">tīrppu</span> <span class="meaning">verdict</span></span>.</p>
+<p>Notice also that the word in [[[#fig_grapheme]]] contains the sequence <span class="ex" lang="ta">ற்றை</span> (<span class="trans">ṟṟai</span>), where the vowel-sign is displayed immediately before the second consonant, rather than before the consonant cluster. This is also something that doesn't happen when conjunct clusters occur.</p>
+<p>The exceptions are the sequences <span class="charExample" translate="no"><span class="ex" lang="ta">க்ஷ</span> <span class="trans">kṣa</span></span>, and <span class="charExample" translate="no"><span class="ex" lang="ta">ஶ்ரீ</span> <span class="trans">śrī</span></span> / <span class="charExample" translate="no"><span class="ex" lang="ta">ஸ்ரீ</span> <span class="trans">srī</span></span> (which are synonyms). These sequences should not be broken during segmentation. Note, that the 'shri' sequence must include the <span class="trans">i</span> vowel to produce a conjunct. With a different vowel, the sequence of characters is displayed using a visual <span class="name">pulli</span>, eg. <span class="charExample" translate="no"><span class="ex" lang="ta">இஶ்ரேல்</span> <span class="trans">iśrēl</span> <span class="meaning">Israel</span></span>.</p>
+<p>Correct segmentation of these conjunct-forming sequences are not  supported by default by Unicode grapheme clusters (which split them in two), and requires the application of tailored rules.</p>
+
+</section-->
+
+
+
+
+<section id="h_words">
+<h3>Word boundaries</h3>
+
+<p id="def-wordboundary">The concept of 'word' is difficult to define in any language (see <a href="https://www.w3.org/International/articles/typography/linebreak.en#whatisword">What is a word?</a>). Here, a word is a vaguely-defined, but recognisable  semantic unit that is typically smaller than a phrase and may comprise one or more syllables.</p>
+
+<p>N’Ko has word units that are separated by spaces.</p>
+
+<p>The <span class="name">te-kerende</span> is a common way of linking compounds together. It sits on the baseline, and breaks cursive joining. For example:</p>
+<p><span class="eg" lang="nqo" dir="rtl">ߡߐ߰ ߺ ߐ ߺ ߡߐ߰</span> </p>
+<p><span class="eg" lang="nqo" dir="rtl">ߛߌ ߺ ߌ ߺ ߛߌ</span></p>
+
+<p>Line-breaks only occur after te-kerende, and not before.</p>
+</section>
+
+
+
+
+
+
+<section id="h_phrase">
+<h3>Phrase &amp; section boundaries</h3>
+
+<p>Gurmukhi uses ASCII punctuation marks.  Phrases are delimited by comma, semicolon, and colon.  Sentences are terminated with a full stop, question mark or exclamation mark.</p>
+
+<p>Sentences may also be terminated using <span class="codepoint" translate="no"><bdi lang="pa">&#x0964;</bdi> [<span class="uname">U+0964 DEVANAGARI DANDA</span>]</span>, rather than an ASCII full stop. It is often separated from the last word in the sentence by a small gap, but should not wrap alone to the beginning of the next line. The gap also doesn't grow during justification.</p>
+
+
+<figure id="fig_danda" class="sideCaption">
+<img src="images/fig_danda.png" class="ex" lang="pa" alt="ਭਾਰਤ ਵਿਚ ਮੌਰੀਸ਼ਸ ਦੇ ਰਾਜਦੂਤ ਸ੍ਰੀਮਤੀ ਮੇਰੀ ਕਲੇਅਰ ਜੇ. ਮੌਂਟੀ ਅੱਜ ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਸਾਹਿਬ ਵਿਖੇ ਦਰਸ਼ਨ ਕਰਨ ਪੁੱਜੇ। ਉਨ੍ਹਾਂ ਸ਼ਰਧਾ ਸਹਿਤ ਮੱਥਾ ਟੇਕ ਕੇ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਲੰਗਰ ਹਾਲ ਵਿਖੇ ਵੀ ਕੁੱਝ ਸਮਾਂ ਸੇਵਾ ਕੀਤੀ।" data-notes="Noto Serif Gurmukhi 24px" data-source="https://beta.ajitjalandhar.com/latestnews/4057191.cms 2023-01-24" style="width:20rem;">
+<div>
+<figcaption>Examples of danda in use as a sentence delimiter in a newspaper report.</figcaption>
+<details><summary>translation</summary><p>The Ambassador of Mauritius to India Mrs. Mary Claire J. Monty came to visit Sri Harmandir Sahib today. He bowed down with reverence and served for some time at Guru Ramdas Ji's Langar Hall.</p></details>
+</div>
+</figure>
+</section>
+
+
+
+
+
+
+<section id="bracketing">
+<h3>Bracketed text</h3>
+
+<p>N'Ko  commonly uses ASCII parentheses and brackets to insert parenthetical information into text.</p>
+
+<figure id="fig_bracketing">
+<table class="character_list">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>start</th>
+<th>end</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>standard</th>
+<td><p><span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x0028;</bdi> [<span class="uname">U+0028 LEFT PARENTHESIS</span>]</span></p></td>
+<td><p><span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x0029;</bdi> [<span class="uname">U+0029 RIGHT PARENTHESIS</span>]</span></p></td>
+</tr>
+<tr>
+<th>other</th>
+<td><p><span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x005B;</bdi> [<span class="uname">U+005B LEFT SQUARE BRACKET</span>]</span>&nbsp;</p></td>
+<td><p><span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x005D;</bdi> [<span class="uname">U+005D RIGHT SQUARE BRACKET</span>]</span>&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+<figcaption>N'Ko parentheses and brackets.</figcaption>
+</figure>
+
+
+
+
+<section id="mirrored_characters">
+<h4>Mirrored characters</h4>
+
+<p class="info">The words 'left' and 'right' in Unicode names for parentheses, brackets, and other paired characters should be ignored. <span class="uname">LEFT</span> should be read as if it said <span class="uname">START</span>, and <span class="uname">RIGHT</span> as <span class="uname">END</span>. The direction in which the glyphs point will be automatically determined according to the base direction of the text.</p>
+
+<figure id="fig_mirrored" class="sideCaption">
+<div>
+<img src="images/mirrored_latin.png" class="ex" lang="nqo" alt="a > b > c" data-notes="Noto Sans Nko 48px"><br>
+<img src="images/mirrored_nko.png" class="ex" lang="nqo" alt="ߊ > ߋ > ߌ" data-notes="Noto Sans Nko 48px">
+</div>
+<figcaption>Both of these lines use <span class="codepoint noindex" translate="no"><span lang="en">&#x003E;</span> [<span class="uname">U+003E GREATER-THAN SIGN</span>]</span>, but the direction it faces depends on the base direction at the point of display.</figcaption>
+</figure>
+
+<p>The number of characters that are mirrored in this way is <a href="https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=[:Bidi_Mirrored=Yes:]">around 550</a>, most of which are mathematical symbols. Some are single characters, rather than pairs. The following are some of the more common ones.</p>
+
+<figure class="exampleBox auto noindex" data-cols=""><p lang="nqo">( ) &lt; &gt; [ ] { } « » ‹ ›</p>
+<figcaption>Examples of mirrored characters.</figcaption>
+</figure>
+</section>
+</section>
+
+
+
+
+
+
+<section id="quotations">
+<h3>Quotations &amp; citations</h3>
+
+<p>N'Ko texts may use guillemets or native marks around quotations. Note, however, that the order of use is different from that in LTR text, because they are not automatically mirrored.</p>
+
+<figure id="fig_quotation_marks" style="width:80%; margin: auto;">
+<table class="character_list">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>start</th>
+<th>end</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">standard</th>
+<td><span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x00AB;</bdi> [<span class="uname">U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</span>]</span>&nbsp;</td>
+<td><span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x00BB;</bdi> [<span class="uname">U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</span>]</span>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">other</th>
+<td><p><span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1C;</span> [<span class="uname">U+2E1C LEFT LOW PARAPHRASE BRACKET</span>]</span></p></td>
+<td><p><span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1D;</span> [<span class="uname">U+2E1D RIGHT LOW PARAPHRASE BRACKET</span>]</span></p></td>
+</tr>
+<tr>
+<th>other</th>
+<td><p><span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3F;</span> [<span class="uname">U+FD3F ORNATE RIGHT PARENTHESIS</span>]</span></p></td>
+<td><p><span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3E;</span> [<span class="uname">U+FD3E ORNATE LEFT PARENTHESIS</span>]</span></p></td>
+</tr>
+</tbody>
+</table>
+<figcaption>N'Ko quotation marks.</figcaption>
+</figure>
+
+
+<p>The quotation marks in the first two rows above are also mirrored as  the directionality changes (see [[[#mirrored_characters]]]). Those in the bottom row are <em>not</em> mirrored during display, which means that for them <span class="uname">LEFT</span> means use on the left, and <span class="uname">RIGHT</span> means use on the right.</p>
+
+<p><span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1C;</span> [<span class="uname">U+2E1C LEFT LOW PARAPHRASE BRACKET</span>]</span> and <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1D;</span> [<span class="uname">U+2E1D RIGHT LOW PARAPHRASE BRACKET</span>]</span> are used as a pair to indicate indirect quotations, eg.
+<span class="charExample" translate="no"><span class="ex" lang="nqo" dir="rtl">⸜ߒߞߏ⸝</span></span>
+</p>
+
+<p class="observation"><span class="leadin">Observation:</span> <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3E;</span> [<span class="uname">U+FD3E ORNATE LEFT PARENTHESIS</span>]</span> and <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3F;</span> [<span class="uname">U+FD3F ORNATE RIGHT PARENTHESIS</span>]</span> derive from Arabic, and appear to be used for quotations in Islamic texts. The appearance of these brackets can vary from the shapes used in Arabic. Note also that they are encoded among presentation forms, but it is normal to use these code points as if they were normal characters. See examples <a href="http://cormand.huma-num.fr/maninkabiblio/ouvrages/tolno-ala_too_kalanke_99.pdf">here</a>.</p>
+
+<figure id="fig_ornate_parens">
+<img src="images/ornate_parens.png" alt="" data-source="http://cormand.huma-num.fr/maninkabiblio/ouvrages/tolno-ala_too_kalanke_99.pdf">
+<figcaption>Example of ornate parentheses used for Quranic quotations.</figcaption>
+</figure>
+</section>
+</section>
+
+
+
+
+
+<section id="h_lines_and_paragraphs">
+<h2>Line &amp; paragraph layout</h2>
+
+
+
+
+<section id="linebreak">
+<h3>Line breaking &amp; hyphenation</h3>
+
+<p>By default, N'Ko breaks lines at inter-word spaces.</p>
+
+
+
+
+
+<section id="breaking_latin">
+<h4>Breaking between Latin words.</h4>
+
+<p>When a line break occurs in the middle of an embedded left-to-right sequence, the items in that sequence need to be rearranged visually so that it isn't necessary to read lines from bottom to top. </p>
+
+<p>[[[#latin-line-breaks]]]</a> shows how two Latin words are apparently reordered in the flow of text to accommodate this rule. Of course, the rearragement is only that of the visual glyphs: nothing affects the order of the characters in memory.</p>
+
+<figure id="latin-line-breaks">
+<p style="margin: auto; text-align: right;"><img src="images/latin-line-breaks-1.png" alt="Text with no line break in Latin text."></p>
+<p style="margin: auto; margin-top: 2em; text-align: right;"><img src="images/latin-line-breaks-2.png" alt="Text with line break in Latin text."></p>
+<figcaption>The lower of these two images shows the result of decreasing the line width, so that text wraps between a sequence of Latin words.</figcaption>
+</figure>
+</section>
+
+
+
+
+<section id="hyphenation">
+<h4>In-word line-breaking</h4>
+<p>Lines can be broken inside a word, in which case<span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x002D;</span> [<span class="uname">U+002D HYPHEN-MINUS</span>]</span> is added to the end of the line.</p>
+</section>
+
+
+
+
+
+
+
+<section id="linedge">
+<h4>Line-edge rules</h4>
+
+<p>As in almost all writing systems, certain punctuation characters should not appear at the end or the start of a line. The Unicode line-break properties help applications decide whether a character should appear at the start or end of a line.</p>
+
+<p><a id="showLinebreaks" target="_blank" href="tbd">Show (default) line-breaking properties for characters in the modern N’Ko Kangbe orthography.</a></p>
+
+<p>The following list gives examples of typical behaviours for some of the characters used in modern N'Ko script. Context may affect the behaviour of some of these and other characters.</p>
+
+<p class="instructions">Click/tap on the characters to show what they are.</p>
+
+<ul>
+<li><span class="ex list" lang="nqo">“ ‘ ( ⸜ «</span> &nbsp; should not be the last character on a line.</li>
+<li><span class="ex list" lang="nqo">” ’ ) ⸝ » ߹ ؛ ؟ ߸ ، . :%</span> &nbsp; should not begin a new line.</li>
+<li><span class="ex list" lang="nqo">߾ ߿</span> &nbsp; should be kept with any number, even if separated by a space or parenthesis.</li>
+</ul>
+
+<p>Line breaking should not move a danda or double danda to the beginning of a new line even if they are preceded by a space character.</p>
+</section>
+</section>
+
+
+
+
+
+<section id="justification">
+<h3>Text alignment &amp; justification</h3>
+
+<p>The most common approach to justification relies on adjustment of spaces.</p>
+
+<p> Sometimes, however, <span class="codepoint"><span lang="nqo" dir="rtl">&#x07FA;</span> [<span class="uname">U+07FA NKO LAJANYALAN</span>]</span> is used like  Arabic <span class="name">tatweel</span> to  stretch the intra-word baseline.</p>
+</section>
+
+
+
+
+
+
+
+<section id="spacing">
+<h3>Text spacing</h3>
+
+<p>Text may be stretched, like in Arabic, using <span class="codepoint"><span lang="nqo" dir="rtl">&#x07FA;</span> [<span class="uname">U+07FA NKO LAJANYALAN</span>]</span> to fit a given space or make a heading stand out, eg. [[[#fig_letter_spacing]]] shows a streched version of the title, <span class="eg inline transc" lang="nqo">ߞߏ߲</span>.</p>
+
+<figure id="fig_letter_spacing" class="sideCaption">
+<img src="images/letter_spacing.png" alt="ߞߺߺߺߺߺߏ߲" data-source="wikipedia?">
+<figcaption>A title that is stretched using baseline extension characters.</figcaption>
+</figure>
+
+<p>This corresponds to the Arabic <span class="codepoint noindex"><span dir="rtl" lang="ar">ـ</span> [<span class="uname">U+0640 ARABIC TATWEEL</span>]</span>.</p>
+</section>
+
+
+
+
+
+
+
+<section id="baselines">
+<h3>Baselines, line height, etc.</h3>
+
+<p>N'Ko uses the so-called 'alphabetic' baseline, which is the same as for Latin and many other scripts.</p>
+<p>N'Ko places diacritics above and below the base characters, but they don't stack. The letters themselves are relatively uniform in height, and have no descenders.</p>
+
+<p>To give an approximate idea, [[[#fig_baselines]]] compares Latin and N'Ko glyphs from the Noto  Sans font. The basic height of N'Ko letters is typically around the Latin cap-height, however  combining marks and the dorome sign reach  beyond the Latin ascenders, creating a need for larger line spacing.</p>
+
+
+<figure id="fig_baselines">
+<div>
+<img src="images/fig_baselines_noto_sans.png" alt="Hhqxߔߝ߭ߊ߲߬ߎ߬ߐ߫߾߁߭߂߷" class="ex" lang="nqo" data-notes="Noto Sans Nko 130px" style="max-width: 90%; margin-block-end:1rem;">
+</div>
+<figcaption>Font metrics for Latin text  compared with N'Ko glyphs in the Noto Sans Nko font.</figcaption>
+</figure>
+</section>
+
+
+
+
+
+
+
+<section id="h_counters">
+<h3>Counters</h3>
+
+<p>The N'Ko orthography uses 2 numeric  styles with native digits. The first uses cardinal numbers, the second ordinal.</p>
+
+
+
+
+<section id="cs_cardinal">
+<h4>Cardinal numeric style</h4>
+<p>The cardinal numeric style  is decimal-based and  uses these  digits.</p>
+<p><span lang="nqo">'߁' '߂' '߃' '߄' '߅' '߆' '߇' '߈' '߉' '߀'</span></p>
+
+
+<figure id="fig_counter_styles">
+<img src="images/fig_numeric_counters.png" alt="1 ߁, 2 ߂, 3 ߃, 4 ߄, 11 ߁߁, 22 ߂߂, 33 ߃߃, 44 ߄߄, 111 ߁߁߁, 222 ߂߂߂, 333 ߃߃߃, 444 ߄߄߄" style="max-width: 40rem;">
+<figcaption>Examples of counter values using the N'Ko cardinal numeric counter style.</figcaption>
+</figure>
+<details><summary>View as text</summary>
+<p lang="nqo" dir="rtl">1 ߁, 2 ߂, 3 ߃, 4 ߄, 11 ߁߁, 22 ߂߂, 33 ߃߃, 44 ߄߄, 111 ߁߁߁, 222 ߂߂߂, 333 ߃߃߃, 444 ߄߄߄</p>
+</details>
+</section>
+
+
+
+
+<section id="cs_ordinal">
+<h4>Ordinal numeric style</h4>
+<p>The ordinal numeric style  uses the same digits, but places a dot alongside. The dot goes over the digit <span class="character">߁</span> (1), but goes below  other digits, and it only appears alongside the leftmost digit. (Bear in mind that N'Ko digits run from right to left.)</p>
+<p><span lang="nqo">'߁߭' '߂߲' '߃߲' '߄߲' '߅߲' '߆߲' '߇߲' '߈߲' '߉߲' '߀߲'</span></p>
+
+
+
+<figure id="fig_counter_styles2">
+<img src="images/fig_numeric_counters2.png" alt="1 ߁, 2 ߂, 3 ߃, 4 ߄, 11 ߁߁, 22 ߂߂, 33 ߃߃, 44 ߄߄, 111 ߁߁߁, 222 ߂߂߂, 333 ߃߃߃, 444 ߄߄߄" style="max-width: 40rem;">
+<figcaption>Examples of counter values using the N'Ko cardinal numeric counter style.</figcaption>
+</figure>
+<details><summary>View as text</summary>
+<p lang="nqo" dir="rtl">1 ߁߭, 2 ߂߲, 3 ߃߲, 4 ߄߲, 11 ߁߁߭, 22 ߂߂߲, 33 ߃߃߲, 44 ߄߄߲, 111 ߁߁߁߭, 222 ߂߂߂߲, 333 ߃߃߃߲, 444 ߄߄߄߲</p>
+</details>
+</section>
+
+
+
+
+<section id="cs_suffix">
+<h4>Prefixes and suffixes</h4>
+
+
+<p>An N'Ko list counter for cardinal number styles typically uses a hyphen + space as a suffix.</p>
+
+<figure id="fig_cs_separators" style="margin-top: 0" class="sideCaption">
+<div dir="rtl" style="display: flex; flex-direction:column; justify-content: flex-end;  line-height: 1.2;">
+<span lang="nqo">߁- </span>
+<span lang="nqo">߂- </span>
+<span lang="nqo">߃- </span>
+<span lang="nqo">߄- </span>
+<span lang="nqo">߅- </span>
+</div>
+<figcaption>Separator for N'Ko list counters.</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section id="page">
+<h2>Page &amp; book layout</h2>
+
+
+
+
+<section id="generallayout">
+<h3>General page layout &amp; progression</h3>
+
+<p>N’Ko books, magazines, etc.  are bound on the right-hand side, and pages progress from right to left.</p>
+
+
+<figure id="fig_book_binding" class="sideCaption">
+<p><img alt="ߞߊ߬ߝߊ" src="images/book_binding_nko.png"/></p>
+<figcaption>Binding configuration for N’Ko books, magazines, etc.</figcaption>
+</figure>
+
+
+<p>Columns are vertical but run right-to-left across the page.</p>
+
+
+
+
+
+<section id="layoutdirection">
+<h4>Layout direction</h4>
+
+<p>The right-to-left orientation of the script affects the direction of page layout, and of the layout of items within the page.</p>
+
+<p>An N’Ko web page should be the mirror-image of pages in, say, French. This includes the various navigation items on the page, and the placement of other panels on the page.</p>
+
+<p>On the other hand, the video controls assume a LTR direction. This is mostly constrained by technology at the moment, and whether or not this is acceptable is still being debated.</p>
+</section>
+</section>
+
+
+
+
+<!--section id="grids">
+<h3>Grids &amp; tables</h3>
+<p class="prompts">tbd</p>
+</section>
+
+
+
+
+  
+<section id="footnotes">
+<h3>Notes, footnotes, etc</h3>
+<p class="prompts">tbd</p>
+</section>
+
+
+
+
+  
+<section id="interaction">
+<h3>Forms &amp; user interaction</h3>
+<p class="prompts">tbd</p>
+</section>
+
+
+
+
+  
+<section id="headers">
+<h3>Page numbering, running headers, etc</h3>
+<p class="prompts">tbd</p>
+</section-->
+</section>
+
+
+
+
+
+<section class="appendix" id="acknowledgements">
+<h2>Acknowledgements</h2>
+
+<p>The initial content of this document was created from parts of <a href="https://r12a.github.io/scripts/nkoo/nqo.html">this page</a>.</p>
+
+<!--p>Special thanks to the following people who contributed information that is used in this document (contributors' names listed in in alphabetic order).</p>
+
+<p>Akshat Joshi, Kulpreet Chilana, Prashant Verma.</p-->
+
+<p data-lang="en">Please find the latest info of the contributors at the <a href="https://github.com/w3c/afrlreq/graphs/contributors">GitHub contributors list</a>.</p>
+</section>
+
+
+
+
+
+
+<!--section class="appendix" id="references">
+<h2>References</h2>
+
+<p id="ref_ishida">[ishida]     Richard Ishida, <a href="https://r12a.github.io/tamil/ta.html">Tamil</a>.</p>
+<p id="ref_ilreq">[ilreq]     Swaran Lata,      Somnath Chandra,      Prashant Verma, <a href="https://www.w3.org/TR/ilreq/">Indic Layout Requirements</a>.</p>
+</section-->
+
+
+</body>
+</html>
