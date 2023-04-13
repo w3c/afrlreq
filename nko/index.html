@@ -798,7 +798,7 @@ group: "i18n",
 <section id="hyphenation">
 <h4>In-word line-breaking</h4>
 
-<p>Lines can be broken inside a word, in which case<span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x002D;</span> <span class="uname">U+002D HYPHEN-MINUS</span></span> is added to the end of the line.</p>
+<p>Lines can be broken inside a word, in which case<span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x002D;</bdi> <span class="uname">U+002D HYPHEN-MINUS</span></span> is added to the end of the line.</p>
 </section>
 
 
@@ -818,7 +818,7 @@ group: "i18n",
 
 <p class="instructions">Click/tap on the characters to show what they are.</p>
 
-<ul>
+<ul style="list-style-type: lower-alpha;">
 <li><span class="ex list" lang="nqo">“ ‘ ( ⸜ «</span> &nbsp; should not be the last character on a line.</li>
 <li><span class="ex list" lang="nqo">” ’ ) ⸝ » ߹ ؛ ؟ ߸ ، . :%</span> &nbsp; should not begin a new line.</li>
 <li><span class="ex list" lang="nqo">߾ ߿</span> &nbsp; should be kept with any number, even if separated by a space or parenthesis.</li>
@@ -835,7 +835,7 @@ group: "i18n",
 
 <p>The most common approach to justification relies on adjustment of spaces.</p>
 
-<p> Sometimes, however, <span class="codepoint"><span lang="nqo" dir="rtl">&#x07FA;</span> <span class="uname">U+07FA NKO LAJANYALAN</span></span> is used like  Arabic <span class="name">tatweel</span> to  stretch the intra-word baseline.</p>
+<p> Sometimes, however, <span class="codepoint"><span lang="nqo" dir="rtl">&#x07FA;</span> <span class="uname">U+07FA NKO LAJANYALAN</span></span><span class="ch">ߺ</span> is used like  Arabic <span class="name">tatweel</span> to  stretch the intra-word baseline.</p>
 </section>
 
 
@@ -847,14 +847,14 @@ group: "i18n",
 <section id="spacing">
 <h3>Text spacing</h3>
 
-<p>Text may be stretched, like in Arabic, using <span class="codepoint"><span lang="nqo" dir="rtl">&#x07FA;</span> <span class="uname">U+07FA NKO LAJANYALAN</span></span> to fit a given space or make a heading stand out, eg. [[[#fig_letter_spacing]]] shows a streched version of the title, <span class="eg inline transc" lang="nqo">ߞߏ߲</span>.</p>
+<p>Text may be stretched, like in Arabic, using <span class="codepoint"><bdi lang="nqo" dir="rtl">&#x07FA;</bdi> <span class="uname">U+07FA NKO LAJANYALAN</span></span> to fit a given space or make a heading stand out, eg. [[[#fig_letter_spacing]]] shows a streched version of the title, <span class="eg inline transc" lang="nqo">ߞߏ߲</span>.</p>
 
 <figure id="fig_letter_spacing" class="sideCaption">
 <img src="images/letter_spacing.png" alt="ߞߺߺߺߺߺߏ߲" data-source="wikipedia?">
 <figcaption>A title that is stretched using baseline extension characters.</figcaption>
 </figure>
 
-<p>This corresponds to the Arabic <span class="codepoint noindex"><span dir="rtl" lang="ar">ـ</span> <span class="uname">U+0640 ARABIC TATWEEL</span></span>.</p>
+<p>This corresponds to the Arabic <span class="codepoint noindex"><bdi dir="rtl" lang="ar">ـ</bdi> <span class="uname">U+0640 ARABIC TATWEEL</span></span>.</p>
 </section>
 
 
