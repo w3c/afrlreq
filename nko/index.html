@@ -84,7 +84,7 @@ group: "i18n",
 <section id="h_info_requests">
 <h3>Other related resources</h3>
 
-<p>The initial material for this document was an edited extract from the page <a href="https://r12a.github.io/scripts/nkoo/nqo.html">N’Ko script orthography notes</a>. That page contains additional details about character usage and how the writing system works, plus interactive information, which are not available here.</p>
+<p>The initial material for this document was an edited extract from the page <a href="https://r12a.github.io/scripts/nkoo/nqo.html">N’Ko  orthography notes</a>. That page contains additional details about character usage and how the writing system works, plus interactive information, which are not available here.</p>
 
 <p>The document <a href="https://www.w3.org/TR/typography/">Language enablement index</a> points to this document and others, and provides a central location for developers and implementers to find information related to various scripts.</p>
 
@@ -178,7 +178,19 @@ group: "i18n",
 
 <p>Unicode provides a set of 10 formatting characters that can be used to control the direction of text when displayed. These characters have no visual form in the rendered text, however text editing applications may have a way to show their location.</p>
 
-<p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202B;</span><img  src="images/chars/202B.png" alt="RLE" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+202B RIGHT-TO-LEFT EMBEDDING</span></span> (<span class="uname">RLE</span>), <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202A;</span><img  src="images/chars/202A.png" alt="LRE" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+202A LEFT-TO-RIGHT EMBEDDING</span></span> (<span class="uname">LRE</span>), and <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202C;</span><img  src="images/chars/202C.png" alt="PDF" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+202C POP DIRECTIONAL FORMATTING</span></span> (<span class="uname">PDF</span>) are in widespread use to set the base direction of a range of characters. <span class="uname">RLE/LRE</span> comes at the start, and  <span class="uname">PDF</span> at the end of a range of characters for which the base direction is to be set.</p>
+<p><span class="codepoint" translate="no"><img src="images/chars/202B.png" alt="RLE"><span class="uname">U+202B RIGHT-TO-LEFT EMBEDDING</span></span>
+(<span class="uname">RLE</span>), 
+<span class="codepoint" translate="no"><img src="images/chars/202A.png" alt="LRE"><span class="uname">U+202A LEFT-TO-RIGHT EMBEDDING</span></span>
+(<span class="uname">LRE</span>), and
+<span class="codepoint" translate="no"><img src="images/chars/202C.png" alt="PDF"><span class="uname">U+202C POP DIRECTIONAL FORMATTING</span></span>
+(<span class="uname">PDF</span>) are in widespread use to set the base direction for an inline range of characters. <span class="uname">RLE/LRE</span> comes at the start, and  <span class="uname">PDF</span> at the end of a range of characters for which the base direction is to be set.</p>
+
+<p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202B;</span><img  src="images/chars/202B.png" alt="RLE" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+202B RIGHT-TO-LEFT EMBEDDING</span></span>
+(<span class="uname">RLE</span>), 
+<span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202A;</span><img  src="images/chars/202A.png" alt="LRE" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+202A LEFT-TO-RIGHT EMBEDDING</span></span>
+(<span class="uname">LRE</span>), and
+<span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x202C;</span><img  src="images/chars/202C.png" alt="PDF" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+202C POP DIRECTIONAL FORMATTING</span></span>
+(<span class="uname">PDF</span>) are in widespread use to set the base direction for an inline range of characters. <span class="uname">RLE/LRE</span> comes at the start, and  <span class="uname">PDF</span> at the end of a range of characters for which the base direction is to be set.</p>
 
 <p class="info">In Unicode 6.1, the Unicode Standard added a set of characters which do the same thing but also isolate the content from surrounding characters, in order to avoid spillover effects. They are <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x2067;</span><img  src="images/chars/2067.png" alt="RLI" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+2067 RIGHT-TO-LEFT ISOLATE</span></span> (<span class="uname">RLI</span>), <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x2066;</span><img  src="images/chars/2066.png" alt="LRI" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+2066 LEFT-TO-RIGHT ISOLATE</span></span> (<span class="uname">LRI</span>), and <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x2069;</span><img  src="images/chars/2069.png" alt="PDI" style="vertical-align:middle; width:2rem; height:2rem;"> <span class="uname">U+2069 POP DIRECTIONAL ISOLATE</span></span> (<span class="uname">PDI</span>).<strong> The Unicode Standard recommends that these be used instead of RLE/LRE...PDF</strong>. </p>
 
@@ -216,9 +228,9 @@ group: "i18n",
 <section id="writing_styles">
 <h3>Font styles</h3>
 
-<p>N’Ko is usually cursive, ie. letters in a word are joined up. </p>
+<p>N’Ko is usually cursive, ie. letters in a word are joined up.</p>
 
-<p>Non-cursive fonts are sometimes used, mainly as display fonts for book and article titles.<tt>u</tt></p>
+<p>Non-cursive fonts are sometimes used, mainly as display fonts for book and article titles.<a class="reflink" href="https://www.unicode.org/versions/Unicode15.0.0/ch19.pdf" title="The Unicode Standard, version 15, p806">§</a></p>
 
 
 <figure id="unjoined" class="sideCaption">
@@ -227,7 +239,7 @@ group: "i18n",
 </figure>
 
 
-<p class="observation"><span class="leadin">Observation:</span> Throughout the <a href="http://cormand.huma-num.fr/maninkabiblio/periodiques/silabosoona5.pdf">source of the above figure</a> the font used applies short baseline extensions to certain characters. For example, <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ</span></span> looks like <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ‍ </span></span>. The extension doesn't cause any join with adjacent characters.</p>
+<p class="observation"><span class="leadin">Observation:</span> Throughout the <a href="http://cormand.huma-num.fr/maninkabiblio/periodiques/silabosoona5.pdf">source of the above figure</a> the font used applies short baseline extensions to certain characters. For example, <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ</span></span> looks like <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ‍ </span></span>. However, these extensions don't join with adjacent characters.</p>
 </section>
   
 
@@ -254,7 +266,7 @@ group: "i18n",
 
 <p>Unlike some other cursive scripts, the cursive treatment doesn't produce significant variations of the essential part of the glyph for a character.</p>
 
-<p>All letters join on both sides.</p>
+<p>All letters are capable of joining on both sides.</p>
 
 
 
@@ -481,7 +493,10 @@ group: "i18n",
 <h4>Managing glyph shaping</h4>
 
 
-<p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x200D;</span><img src="images/chars/200D.png" alt="ZWJ" style="vertical-align:middle; height:2rem;width:2rem;"> <span class="uname">U+200D ZERO WIDTH JOINER</span></span> (<span class="uname">ZWJ</span>) and <span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x200C;</span><img src="images/chars/200C.png" alt="ZWNJ" style="vertical-align:middle; height:2rem;width:2rem;"> <span class="uname">U+200C ZERO WIDTH NON-JOINER</span></span> (<span class="uname">ZWNJ</span>) are used to control the visual joining behaviour of cursive glyphs. They are particularly useful in educational contexts. For example, the <span class="uname" dir="ltr">ZWJ</span> was used to create the shapes in [[[#fig_joining_forms]]].</p>
+<p><span class="codepoint" translate="no"><img src="images/chars/200D.png" alt="ZWJ" style="vertical-align:middle; height:2rem;width:2rem;"><span class="uname">U+200D ZERO WIDTH JOINER</span></span>
+(<span class="uname">ZWJ</span>) and
+<span class="codepoint" translate="no"><img src="images/chars/200C.png" alt="ZWNJ" style="vertical-align:middle; height:2rem;width:2rem;"><span class="uname">U+200C ZERO WIDTH NON-JOINER</span></span>
+(<span class="uname">ZWNJ</span>) are used to control the visual joining behaviour of cursive glyphs. They are particularly useful in educational contexts.</p>
 
 <p><span class="uname" dir="ltr">ZWJ</span>  permits a letter to form a cursive connection without a visible neighbour.</p>
 
@@ -504,25 +519,23 @@ group: "i18n",
 <h3>Context-based shaping &amp; positioning</h3>
 
 
-<p>The  Noto Sans NKo font changes the height of  diacritics according to the height of the base character, but  the preferred approach is to maintain the diacritics at the same height all along a line.</p>
-
+<p>The  Noto Sans NKo font changes the height of  diacritics according to the height of the base character, but  the preferred approach is to maintain the diacritics at the same height all along a line.<a class="reflink" href="https://github.com/w3c/afrlreq/issues/30" title="GitHub, Issue #30">§</a></p>
 
 <figure id="fig_diacritic_height" class="sideCaption">
 <img src="images/fig_diacritic_height.svg" class="ex" lang="nqo" alt="ߊ߬ߟߎ߬" data-notes="Noto Sans Nko" style="height:8rem;">
 <figcaption>The height of diacritics doesn't depend on the base consonant.</figcaption>
 </figure>
+<details class="figureSub"><summary>show as text</summary><p><span class="eg inline" lang="nqo">ߊ߬ߟߎ߬</span></p></details>
 
 
-<p>A base character may carry multiple combining characters.</p>
+<p>The only time a base character carries multiple combining characters is when one is a tone mark and the other is <span class="codepoint" translate="no"><img src="images/chars/07F2.png" alt="&#x07F2;"><span class="uname">U+07F2 NKO COMBINING NASALIZATION MARK</span></span>.  These diacritics occur on opposite sides of the base letter, so this avoids the difficulties associated with correctly placing marks in the same location. (A letter that carries <span class="codepoint" translate="no"><img src="images/chars/07F3.png" alt="&#x07F3;"><span class="uname">U+07F3 NKO COMBINING DOUBLE DOT ABOVE</span></span> will not usually carry a tone mark as well.<a class="reflink" href="https://github.com/w3c/afrlreq/issues/30" title="GitHub, Issue #30">§</a>)</p>
 
 
 <figure id="fig_refuse" class="sideCaption">
 <img src="images/fig_refuse.svg" class="ex" lang="nqo" alt="ߓߊ߲߬" data-notes="Noto Sans Nko" style="height:9rem;">
-<div>
 <figcaption>Multiple diacritics attached to the same base consonant.</figcaption>
-<details><summary>details</summary><p><span class="eg inline" lang="nqo">ߓߊ߲߬</span></p></details>
-</div>
 </figure>
+<details class="figureSub"><summary>show as text</summary><p><span class="eg inline" lang="nqo">ߓߊ߲߬</span></p></details>
 
 
 <p>Apart from that, no shaping is needed other than that described for cursive connections.</p>
