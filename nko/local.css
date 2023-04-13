@@ -153,12 +153,43 @@ figure summary {
 
 
 
+.codepoint bdi {
+    font-size: 130%;
+    margin-inline: 0.5em;
+    }
+
+.codepoint img {
+    vertical-align:middle;
+    width:2rem; height:2rem;
+    margin: 0;
+    }
+
+.codepoint .uname {
+	font-size: 80%;
+	letter-spacing: 0.03em;
+	color: teal;
+    font-family: Menlo, monospace;
+    }
 
 
 
+.reflink {
+    vertical-align: super;
+    font-size: 70%;
+    }
 
 
-
+.figureSub {
+    margin-block-start: -2rem;
+    margin-block-end: 3rem;
+    text-align: center;
+    }
+.figureSub summary {
+    font-weight: normal;
+    font-size: 80%;
+    line-height: 1;
+    cursor: pointer;
+    }
 
 
 
