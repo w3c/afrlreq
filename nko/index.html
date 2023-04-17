@@ -502,10 +502,7 @@ group: "i18n",
 
 <p><span class="uname" dir="ltr">ZWNJ</span> prevents two adjacent letters forming a cursive connection with each other when rendered.</p>
 
-<!--p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x034F;</span><img src="../../c/Combining_Diacritical_Marks/034F.png" alt="MVS" style="vertical-align:middle"> [<a href="/scripts/XXXXXX/block#char034F"><span class="uname">U+034F COMBINING GRAPHEME JOINER</span></a></span> is used in Arabic to produce special ordering of diacritics. The name is a misnomer, as it is generally used to <em>break</em> the normal sequence of diacritics.</p-->
-
-<p class="observation"><span class="leadin">Observation:</span> The <span class="uname" dir="ltr">ZWJ</span> only works on the left side of glyphs in [[[#fig_joining_forms]]] if the table cell's base direction is set to RTL.</p>
-</section>
+<!--p><span class="codepoint" translate="no"><span style="display:none;" lang="fuf">&#x034F;</span><img src="../../c/Combining_Diacritical_Marks/034F.png" alt="MVS" style="vertical-align:middle"> [<a href="/scripts/XXXXXX/block#char034F"><span class="uname">U+034F COMBINING GRAPHEME JOINER</span></a></span> is used in Arabic to produce special ordering of diacritics. The name is a misnomer, as it is generally used to <em>break</em> the normal sequence of diacritics.</p--></section>
 </section>
 
 
@@ -560,7 +557,7 @@ group: "i18n",
 </figure>
 
 
-<p>Italics may need to lean to the left, rather than to the right. Neil Patel writes:</p>
+<p>Italics may need to lean to the left, rather than to the right. Neil Patel writes:<a class="reflink" href="https://github.com/w3c/afrlreq/issues/3#issuecomment-512911833" title="GitHub, Issue #3">§</a></p>
 
 
 <blockquote>
@@ -627,11 +624,21 @@ group: "i18n",
 
 <p>N’Ko has word units that are separated by spaces.</p>
 
-<p>The <span class="name">te-kerende</span> is a common way of linking compounds together. It sits on the baseline, and breaks cursive joining. For example:</p>
-<p><span class="eg" lang="nqo" dir="rtl">ߡߐ߰ ߺ ߐ ߺ ߡߐ߰</span> </p>
-<p><span class="eg" lang="nqo" dir="rtl">ߛߌ ߺ ߌ ߺ ߛߌ</span></p>
 
-<p>Line-breaks only occur after te-kerende, and not before.</p>
+
+
+<section id="tekerende">
+<h4>Te-kerende</h4>
+
+<p>The <span class="name">te-kerende</span> is a common way of linking  together a sequence of sounds that mean 'each and every ...'. It is possible to create new combinations, and the general pattern is to repeat the vowel of the first word, then repeat the first word, and put the te-kerende in between each item.<a class="reflink" href="https://github.com/w3c/afrlreq/issues/28" title="GitHub, Issue #28">§</a></p>
+<p><span class="charExample" translate="no"><bdi class="ex" dir="rtl" lang="nqo">ߡߐ߰ ߺ ߐ ߺ ߡߐ߰</bdi> <bdi class="transc" dir="rtl">mɔ _ ɔ _ mɔ</bdi> <bdi class="meaning">everyone (each and every person)</bdi></span></p>
+<p><span class="charExample" translate="no"><span class="ex" lang="nqo" dir="rtl">ߛߎ ߺ ߎ ߺ ߛߎ</span> <span class="transc">su-u-su</span> <span class="meaning">every night</span></span></p>
+<p><span class="charExample" translate="no"><bdi class="ex" dir="rtl" lang="nqo">ߛߌ ߺ ߌ ߺ ߛߌ</bdi> <bdi class="transc" dir="rtl">si _ i _ si</bdi> <bdi class="meaning">anyone</bdi></span></p>
+
+<p>The <span class="name">te-kerende</span> sits on the baseline, and breaks cursive joining. There is a small space on either side.</p>
+
+<p>Line-breaks only occur after <span class="name">te-kerende</span>, and not before.<a class="reflink" href="https://www.unicode.org/L2/L2015/15338-n4706-nko-additions.pdf" title="Proposal to encode four N’Ko characters in the BMP of the UCS">§</a></p>
+</section>
 </section>
 
 
@@ -747,15 +754,59 @@ group: "i18n",
 
 <p>The quotation marks in the first two rows above are also mirrored as  the directionality changes (see [[[#mirrored_characters]]]). Those in the bottom row are <em>not</em> mirrored during display, which means that for them <span class="uname">LEFT</span> means use on the left, and <span class="uname">RIGHT</span> means use on the right.</p>
 
-<p><span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1C;</span> <span class="uname">U+2E1C LEFT LOW PARAPHRASE BRACKET</span></span> and <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1D;</span> <span class="uname">U+2E1D RIGHT LOW PARAPHRASE BRACKET</span></span> are used as a pair to indicate indirect quotations, eg.
+<p><span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1C;</span> <span class="uname">U+2E1C LEFT LOW PARAPHRASE BRACKET</span></span> and <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#x2E1D;</span> <span class="uname">U+2E1D RIGHT LOW PARAPHRASE BRACKET</span></span> are used as a pair to indicate indirect quotations<a class="reflink" href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n2765.pdf" title="Michael Everson, Mamady Doumbouya, Baba Mamadi Diané, Karamo Kaba Jammeh, Proposal to add the N’Ko script to the BMP of the UCS">§</a>, eg.
 <span class="charExample" translate="no"><span class="ex" lang="nqo" dir="rtl">⸜ߒߞߏ⸝</span></span></p>
 
-<p class="observation"><span class="leadin">Observation:</span> <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3E;</span> <span class="uname">U+FD3E ORNATE LEFT PARENTHESIS</span></span> and <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3F;</span> <span class="uname">U+FD3F ORNATE RIGHT PARENTHESIS</span></span> derive from Arabic, and appear to be used for quotations in Islamic texts. The appearance of these brackets can vary from the shapes used in Arabic. Note also that they are encoded among presentation forms, but it is normal to use these code points as if they were normal characters. See examples <a href="http://cormand.huma-num.fr/maninkabiblio/ouvrages/tolno-ala_too_kalanke_99.pdf">here</a>.</p>
+<p class="observation"><span class="leadin">Observation:</span> <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3E;</span> <span class="uname">U+FD3E ORNATE LEFT PARENTHESIS</span></span> and <span class="codepoint" translate="no"><span lang="nqo" dir="rtl">&#xFD3F;</span> <span class="uname">U+FD3F ORNATE RIGHT PARENTHESIS</span></span> derive from Arabic, and appear to be used for quotations in Islamic texts. The appearance of these brackets can vary from the shapes used in Arabic. Note also that they are encoded among presentation forms, but it is normal to use these particular code points as if they were normal characters. See examples <a href="http://cormand.huma-num.fr/maninkabiblio/ouvrages/tolno-ala_too_kalanke_99.pdf">here</a>.</p>
 
 <figure id="fig_ornate_parens">
 <img src="images/ornate_parens.png" alt="" data-source="http://cormand.huma-num.fr/maninkabiblio/ouvrages/tolno-ala_too_kalanke_99.pdf">
 <figcaption>Example of ornate parentheses used for Quranic quotations.</figcaption>
 </figure>
+</section>
+
+
+
+
+  
+<section id="emphasis">
+<h3>Emphasis</h3>
+
+<p>N'Ko authors commonly apply bolding and sometimes italics to emphasise text (see [[[#fontstyle]]]).</p>
+</section>
+
+
+
+
+
+  
+<section id="abbreviation">
+<h3>Abbreviation, ellipsis &amp; repetition</h3>
+
+<p><span class="codepoint" translate="no"><bdi lang="nqo">߽</bdi><span class="uname">U+07FD NKO DANTAYALAN</span></span>
+is used to abbreviate units of measure. The table shows some examples from a long list by Everson:<a class="reflink" href="https://www.unicode.org/L2/L2015/15338-n4706-nko-additions.pdf" title="Michael Everson, Proposal to encode four N’Ko characters in the BMP of the UCS">§</a></p>
+
+<table>
+<tbody><tr><th>Full word</th>
+<th>Abbreviation</th>
+</tr>
+<tr><td><span class="charExample" translate="no"><bdi class="ex" dir="rtl" onclick="showNameDetails('ߞߎߘߍ', 'nqo', window.blockDir, '', document.getElementById('panel'), '', '', '')" lang="nqo">ߞߎߘߍ</bdi> <bdi class="transc" dir="rtl">kudɛ</bdi> <bdi class="meaning">kilometer</bdi></span></td>
+<td><span class="codepoint" translate="no"><bdi dir="rtl" lang="nqo">ߞ߽</bdi><span class="uname">U+07DE NKO LETTER KA + U+07FD NKO DANTAYALAN</span></span></td>
+</tr>
+<tr><td><span class="charExample" translate="no"><bdi class="ex" dir="rtl" onclick="showNameDetails('ߛߌߘߐ', 'nqo', window.blockDir, '', document.getElementById('panel'), '', '', '')" lang="nqo">ߛߌߘߐ</bdi> <bdi class="transc" dir="rtl">sidɔ</bdi> <bdi class="meaning">gram</bdi></span></td>
+<td><span class="codepoint" translate="no"><bdi dir="rtl" lang="nqo">ߛ߽</bdi><span class="uname">U+07DB NKO LETTER SA + U+07FD NKO DANTAYALAN</span></span></td>
+</tr>
+<tr><td><span class="charExample" translate="no"><bdi class="ex" dir="rtl" onclick="showNameDetails('ߕߏ߲ߜߊ', 'nqo', window.blockDir, '', document.getElementById('panel'), '', '', '')" lang="nqo">ߕߏ߲ߜߊ</bdi> <bdi class="transc" dir="rtl">to˜gᵇa</bdi> <bdi class="meaning">litre</bdi></span></td>
+<td><span class="codepoint" translate="no"><bdi dir="rtl" lang="nqo">ߕ߽</bdi><span class="uname">U+07D5 NKO LETTER TA + U+07FD NKO DANTAYALAN</span></span></td>
+</tr>
+<tr><td><span class="charExample" translate="no"><bdi class="ex" dir="rtl" onclick="showNameDetails('ߜߟߊ߬ߥߊ߰ߘߋ߲', 'nqo', window.blockDir, '', document.getElementById('panel'), '', '', '')" lang="nqo">ߜߟߊ߬ߥߊ߰ߘߋ߲</bdi> <bdi class="transc" dir="rtl">gbalàwàadẽ</bdi> <bdi class="meaning">millimetre</bdi></span></td>
+<td><span class="codepoint" translate="no"><bdi dir="rtl" lang="nqo">ߡߥ߽</bdi><span class="uname">U+07E1 NKO LETTER MA + U+07E5 NKO LETTER WA + U+07FD NKO DANTAYALAN</span></span></td>
+</tr>
+<tr><td><span class="charExample" translate="no"><bdi class="ex" dir="rtl" onclick="showNameDetails('ߜߟߊ߬ߗߡߍ߬ߝߘߎ߬ߓߍ߲', 'nqo', window.blockDir, '', document.getElementById('panel'), '', '', '')" lang="nqo">ߜߟߊ߬ߗߡߍ߬ߝߘߎ߬ߓߍ߲</bdi> <bdi class="transc" dir="rtl">gbàlàcɛ̀mɛ̀fùdùbɛ̃</bdi> <bdi class="meaning">cm²</bdi></span></td>
+<td><span class="codepoint" translate="no"><bdi dir="rtl" lang="nqo">ߡߗ߽߂</bdi><span class="uname">U+07E1 NKO LETTER MA + U+07D7 NKO LETTER CHA + U+07FD NKO DANTAYALAN + U+07C2 NKO DIGIT TWO</span></span></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 
@@ -772,7 +823,7 @@ group: "i18n",
 <section id="linebreak">
 <h3>Line breaking &amp; hyphenation</h3>
 
-<p>By default, N'Ko breaks lines at inter-word spaces.</p>
+<p>By default, N'Ko breaks lines at inter-word spaces. As in almost all writing systems, certain punctuation characters should not appear at the end or the start of a line.</p>
 
 
 
@@ -798,7 +849,7 @@ group: "i18n",
 <section id="hyphenation">
 <h4>In-word line-breaking</h4>
 
-<p>Lines can be broken inside a word, in which case<span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x002D;</bdi> <span class="uname">U+002D HYPHEN-MINUS</span></span> is added to the end of the line.</p>
+<p>Lines can be broken inside a word, in which case<span class="codepoint" translate="no"><bdi lang="nqo" dir="rtl">&#x002D;</bdi> <span class="uname">U+002D HYPHEN-MINUS</span></span> is added to the end of the line.<a class="reflink" href="https://www.unicode.org/L2/L2015/15338-n4706-nko-additions.pdf" title="Proposal to encode four N’Ko characters in the BMP of the UCS">§</a></p>
 </section>
 
 
@@ -810,14 +861,11 @@ group: "i18n",
 <section id="linedge">
 <h4>Line-edge rules</h4>
 
-<p>As in almost all writing systems, certain punctuation characters should not appear at the end or the start of a line. The Unicode line-break properties help applications decide whether a character should appear at the start or end of a line.</p>
+<p>As in almost all writing systems, certain punctuation characters should not appear at the end or the start of a line. The Unicode line-break properties help applications decide whether a character should appear in these positions.</p>
 
 <p><a id="showLinebreaks" target="_blank" href="https://r12a.github.io/scripts/apps/listlinebreak/index.html?chars=%DF%94%20%DF%93%20%DF%95%20%DF%98%20%DF%97%20%DF%96%20%DF%9E%20%DF%9C%20%DF%9D%20%DF%9B%20%DF%A4%20%DF%A1%20%DF%A3%20%DF%A2%20%DF%A5%20%DF%99%20%DF%9A%20%DF%9F%20%DF%A6%20%DF%92%20%DF%8A%20%DF%8B%20%DF%8C%20%DF%8D%20%DF%8E%20%DF%8F%20%DF%90%20%DF%91%20%DF%B4%20%DF%B5%20%DF%A0%20%DF%A7%20%DF%BA%20%DF%AB%20%DF%AC%20%DF%AD%20%DF%AE%20%DF%AF%20%DF%B0%20%DF%B1%20%DF%B2%20%DF%B3%20%DF%BD%20%DF%80%20%DF%81%20%DF%82%20%DF%83%20%DF%84%20%DF%85%20%DF%86%20%DF%87%20%DF%88%20%DF%89%20%DF%B8%20%DF%B9%20%DF%B7%20%E2%B8%9C%20%E2%B8%9D%20%D8%8C%20%D8%9B%20%D8%9F%20%EF%B4%BE%20%EF%B4%BF%20%C2%AB%20%C2%BB%20(%20)%20[%20]%20.%20:%20%DF%B6%20%DF%BE%20%DF%BF%20%E2%80%8C%20%E2%80%8D%20%E2%81%A7%20%E2%80%AB%20%E2%81%A6%20%E2%80%AA%20%E2%81%A8%20%E2%81%A9%20%E2%80%AC%20%E2%80%8F%20%E2%80%8E">Show (default) line-breaking properties for characters in the modern N’Ko Kangbe orthography.</a></p>
 
 <p>The following list gives examples of typical behaviours for some of the characters used in modern N'Ko script. Context may affect the behaviour of some of these and other characters.</p>
-
-<p class="instructions">Click/tap on the characters to show what they are.</p>
-
 <ul style="list-style-type: lower-alpha;">
 <li><span class="ex list" lang="nqo">“ ‘ ( ⸜ «</span> &nbsp; should not be the last character on a line.</li>
 <li><span class="ex list" lang="nqo">” ’ ) ⸝ » ߹ ؛ ؟ ߸ ، . :%</span> &nbsp; should not begin a new line.</li>
@@ -833,9 +881,9 @@ group: "i18n",
 <section id="justification">
 <h3>Text alignment &amp; justification</h3>
 
-<p>The most common approach to justification relies on adjustment of spaces.</p>
+<p>The most common approach to justification relies on adjustment of spaces.<a class="reflink" href="https://www.unicode.org/versions/Unicode13.0.0/ch19.pdf" title="Unicode Consortium, The Unicode Standard, Version 13.0, Chapter 19.4">§</a></p>
 
-<p> Sometimes, however, <span class="codepoint"><span lang="nqo" dir="rtl">&#x07FA;</span> <span class="uname">U+07FA NKO LAJANYALAN</span></span><span class="ch">ߺ</span> is used like  Arabic <span class="name">tatweel</span> to  stretch the intra-word baseline.</p>
+<p> Sometimes, however, <span class="codepoint"><bdi lang="nqo" dir="rtl">&#x07FA;</bdi><span class="uname">U+07FA NKO LAJANYALAN</span></span> is used like  Arabic <span class="name">tatweel</span> to  stretch the intra-word baseline.<a class="reflink" href="https://www.unicode.org/versions/Unicode13.0.0/ch19.pdf" title="Unicode Consortium, The Unicode Standard, Version 13.0, Chapter 19.4">§</a></p>
 </section>
 
 
@@ -847,7 +895,8 @@ group: "i18n",
 <section id="spacing">
 <h3>Text spacing</h3>
 
-<p>Text may be stretched, like in Arabic, using <span class="codepoint"><bdi lang="nqo" dir="rtl">&#x07FA;</bdi> <span class="uname">U+07FA NKO LAJANYALAN</span></span> to fit a given space or make a heading stand out, eg. [[[#fig_letter_spacing]]] shows a streched version of the title, <span class="eg inline transc" lang="nqo">ߞߏ߲</span>.</p>
+<p>Text may be stretched, like in Arabic, using <span class="codepoint"><bdi lang="nqo" dir="rtl">&#x07FA;</bdi> <span class="uname">U+07FA NKO LAJANYALAN</span></span> to fit a given space or make a heading stand out, eg. [[[#fig_letter_spacing]]] shows a streched version of the title,
+<span class="charExample inline" translate="no"><bdi class="ex" onclick="showNameDetails('ߞߏ߲', 'nqo', window.blockDir, '', document.getElementById('panel'), '', '', '')" lang="nqo">ߞߏ߲</bdi> <bdi class="transc">kɔ̌n</bdi> <bdi class="meaning">do first, precede</bdi></span>.</p>
 
 <figure id="fig_letter_spacing" class="sideCaption">
 <img src="images/letter_spacing.png" alt="ߞߺߺߺߺߺߏ߲" data-source="wikipedia?">
@@ -869,7 +918,7 @@ group: "i18n",
 <p>N'Ko uses the so-called 'alphabetic' baseline, which is the same as for Latin and many other scripts.</p>
 <p>N'Ko places diacritics above and below the base characters, but they don't stack. The letters themselves are relatively uniform in height, and have no descenders.</p>
 
-<p>To give an approximate idea, [[[#fig_baselines]]] compares Latin and N'Ko glyphs from the Noto  Sans font. The basic height of N'Ko letters is typically around the Latin cap-height, however  combining marks and the dorome sign reach  beyond the Latin ascenders, creating a need for larger line spacing.</p>
+<p>To give an approximate idea, [[[#fig_baselines]]] compares Latin and N'Ko glyphs from the Noto  Sans font. The basic height of N'Ko letters is typically around the Latin cap-height, however  combining marks and the <span class="name">dorome</span> sign reach  beyond the Latin ascenders, creating a need for larger line spacing.</p>
 
 
 <figure id="fig_baselines">
@@ -1052,13 +1101,31 @@ group: "i18n",
 
 
 
-<!--section class="appendix" id="references">
-<h2>References</h2>
+<section id="refs">
+<h2>References &amp; sources</h2>
 
-<p id="ref_ishida">[ishida]     Richard Ishida, <a href="https://r12a.github.io/tamil/ta.html">Tamil</a>.</p>
-<p id="ref_ilreq">[ilreq]     Swaran Lata,      Somnath Chandra,      Prashant Verma, <a href="https://www.w3.org/TR/ilreq/">Indic Layout Requirements</a>.</p>
-</section-->
+<p><i class="fnDef">1</i> <a target="_blank" href="https://repository.upenn.edu/cgi/viewcontent.cgi?article=4537&amp;context=edissertations"><cite class="refTitle">Clear Language: Script, Register And The N’ko Movement Of Manding-Speaking West Africa</cite></a>, <span class="refPublisher">University of Pennsylvania ScholarlyCommons<span> <small>(retr. Nov 2021)</small></span></span></p>
 
+<p><i class="fnDef">2</i> <span class="refAuthor">Michael Everson, Mamady Doumbouya, Baba Mamadi Diané, Karamo Kaba Jammeh</span>, <a target="_blank" href="https://www.unicode.org/L2/L2005/05237-n2977-nko-jona.pdf"><cite class="refTitle">Clarification on the identity and use of three N’Ko letters</cite></a></p>
+
+<p><i class="fnDef">3</i> <span class="refAuthor">Michael Everson</span>, <a target="_blank" href="https://www.unicode.org/L2/L2015/15338-n4706-nko-additions.pdf"><cite class="refTitle">Proposal to encode four N’Ko characters in the BMP of the UCS</cite></a></p>
+
+<p><i class="fnDef">4</i> <span class="refAuthor">Michael Everson, Mamady Doumbouya, Baba Mamadi Diané, Karamo Kaba Jammeh</span>, <a target="_blank" href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n2765.pdf"><cite class="refTitle">Proposal to add the N’Ko script to the BMP of the UCS</cite></a></p>
+
+<p><i class="fnDef">5</i> <span class="refAuthor">GitHub, Afrlreq</span>, <a target="_blank" href="https://github.com/w3c/afrlreq/issues/3"><cite class="refTitle">Direction of slant for italic/oblique RTL text</cite></a></p>
+
+<p><i class="fnDef">6</i> <a target="_blank" href="http://www.fakoli.net/nko/tutorial/intro.html"><cite class="refTitle">N’ko for Beginners: Introduction</cite></a> <small>(retr. Nov 2021)</small></p>
+
+<p><i class="fnDef">7</i> <span class="refAuthor">Omniglot</span>, <a target="_blank" href="https://www.omniglot.com/writing/bamum.htm"><cite class="refTitle">Bamum syllabary</cite></a></p>
+
+<p><i class="fnDef">8</i> <span class="refAuthor">Unicode Consortium</span>, <a target="_blank" href="https://www.unicode.org/versions/Unicode13.0.0/ch19.pdf"><cite class="refTitle">The Unicode Standard, Version 13.0</cite></a>, <span class="reflistub">Chapter 19.4: Africa, N’Ko<span>, <span class="refPages">772-776<span>, ISBN <span class="refISBN">978-1-936213-16-0.<span></span></span></span></span></span></span></p>
+
+<p><i class="fnDef">9</i> <span class="refAuthor">Unicode Consortium</span>, <a target="_blank" href="https://www.unicode.org/reports/tr14/"><cite class="refTitle">Unicode Line Breaking Algorithm (UAX#14)</cite></a></p>
+
+<p><i class="fnDef">10</i> <span class="refAuthor">Wikipedia</span>, <a target="_blank" href="https://en.wikipedia.org/wiki/N%27Ko_alphabet"><cite class="refTitle">N'Ko alphabet</cite></a></p>
+
+<p><i class="fnDef">11</i> <span class="refAuthor">François Yergeau, Patrick Andries</span>, <a target="_blank" href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n2949.pdf"><cite class="refTitle">For a Correct Encoding of N’Ko</cite></a></p>
+</section>
 
 </body>
 </html>
