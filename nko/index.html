@@ -233,13 +233,10 @@ group: "i18n",
 <p>Non-cursive fonts are sometimes used, mainly as display fonts for book and article titles.<a class="reflink" href="https://www.unicode.org/versions/Unicode15.0.0/ch19.pdf" title="The Unicode Standard, version 15, p806">§</a></p>
 
 
-<figure id="unjoined" class="sideCaption">
+<figure id="fig_unjoined" class="sideCaption">
 <img class="ex" lang="nqo" src="images/unjoined.png" alt="ߝߘߊ߬ߝߌ߲߬߬ߠߊ߫ ߕߟߋ߬ߓߋ ߥߊߘߌ߫ ߞߎߘߊ" data-src="http://cormand.huma-num.fr/maninkabiblio/periodiques/silabosoona5.pdf" style="width: 350px;">
 <figcaption>An example of unjoined text used for the title of a section. The body text is joined.</figcaption>
 </figure>
-
-
-<p class="observation"><span class="leadin">Observation:</span> Throughout the <a href="http://cormand.huma-num.fr/maninkabiblio/periodiques/silabosoona5.pdf">source of the above figure</a> the font used applies short baseline extensions to certain characters. For example, <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ</span></span> looks like <span class="charExample inline" translate="no"><span class="ex" lang="nqo" dir="rtl">ߣ‍ </span></span>. However, these extensions don't join with adjacent characters.</p>
 </section>
   
 
@@ -255,7 +252,31 @@ group: "i18n",
 <section id="cursive">
 <h3>Cursive text</h3>
 
-<p>When N’Ko is cursive (see [[[#writing_styles]]]), letters in a word are joined up. Fonts need to produce the appropriate joining form for a letter, according to its visual context, but the code point remains the same.  This results in four different glyphs for most letters (including an isolated glyph).</p>
+
+
+
+
+
+<section id="noncursive">
+<h4>Non-joining glyphs</h4>
+
+<p>As mentioned in the previous section,  fonts containing non-joining glyphs are sometimes used as display fonts for book and article titles (see [[[#fig_unjoined]]]).</p>
+
+<p>The shapes of letters in unjoined fonts can vary, and they may derive from old cursive font implementations. The shapes shown in the title of [[[#fig_unjoined]]] often have short baseline extensions, for example, <span class="charExample inline" translate="no"><img class="ex" lang="nqo" src="images/chars/07E3.png" alt="ߣ" style="height: 1.4rem;width: 1.4rem; vertical-align: middle;"></span> looks like 
+<span class="charExample inline" translate="no"><img class="ex" lang="nqo" src="images/chars/na.png" alt="ߣ" style="height: 1.4rem;width: 1.4rem; vertical-align: middle;"></span>, however, these extensions don't join with adjacent characters.</p>
+
+<p>The shapes just mentioned can be found quite commonly, however the  World Organisation for the Development of N'Ko prefers that unjoined shapes look the same as the isolated forms of letters without the baseline extensions.<a class="reflink" href="https://github.com/w3c/afrlreq/issues/29#issuecomment-1468140413" title="GitHub issue #29">§</a></p>
+</section>
+
+
+
+
+
+
+<section id="cursive_shaping">
+<h4>Joining forms</h4>
+
+<p>When N’Ko is cursive, letters in a word are joined up. Fonts need to produce the appropriate joining form for a letter, according to its visual context, but the code point remains the same.  This results in four different glyphs for most letters (including an isolated glyph).</p>
 
 
 <figure id="fig_cursive" class="sideCaption">
@@ -268,15 +289,6 @@ group: "i18n",
 
 <p>All letters are capable of joining on both sides.</p>
 
-
-
-
-
-
-
-
-<section id="cursive_shaping">
-<h4>Cursive joining forms</h4>
 
 <p>Unlike Arabic or Syriac,  joining forms only differ by the addition of a small baseline extension. Also, whereas Arabic and Syriac re-use a number of basic shapes to create additional letters by adding diacritics, in N’Ko each letter shape is different.  [[[#fig_joining_forms]]] shows  the basic shapes in N’Ko and what their joining forms look like.</p>
 
