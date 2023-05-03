@@ -14,7 +14,7 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 ### Help wanted! ###
 We're looking for information about these writing systems. Follow the links for specific questions.
 
-[Cherokee](https://github.com/w3c/amlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Acher+label%3Aquestion) • [Inuktitut & Cree (UCAS)](https://github.com/w3c/amlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Acans+label%3Aquestion) • [Osage](https://github.com/w3c/amlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Aosge+label%3Aquestion)
+[Adlam](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Aadlm+label%3Aquestion) • [N'Ko](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Ankoo+label%3Aquestion) • [Ajami](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Aarab+label%3Aquestion)
 
 ### Documents
 - **Adlam Gap Analysis** • [DNOTE](https://www.w3.org/TR/adlm-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/adlm-gap) • [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/adlm-gap.html) • [*Discuss*](https://github.com/w3c/afrlreq/labels/s%3Aadlm) • [*Edit*](https://github.com/w3c/afrlreq/labels/doc%3Aadlm)
