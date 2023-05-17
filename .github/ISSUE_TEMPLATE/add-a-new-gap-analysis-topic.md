@@ -9,11 +9,11 @@ assignees: ''
 
 <i class="meta">This issue is applicable to most_languages.</i>
 
-Brief_intro_illustrating_the_issue
+Brief_intro_illustrating_the_requirements
 
-Point_to_relevant_issues_layout_requirements_etc
-- [xxx]()
-- [xxx]()
+More:
+- [requirements_doc]()
+- [etc]()
 
 
 IF THIS IS NOT THE ISSUE THAT IS BEING TRACKED BY THE GAP-ANALYSIS PIPELINE, ADD A POINTER TO THAT ISSUE.  THE INITIAL BRIEF INTRO SHOULD REMAIN, AND MAY BE TAILORED WITH EXAMPLES RELEVANT TO THIS LANGUAGE.  YOU MAY, OPTIONALLY, ALSO ADD OTHER DETAILS BELOW IF THEY ARE SPECIFIC TO THIS LANGUAGE. THEN ADD THIS:
@@ -25,6 +25,16 @@ IF THIS IS NOT THE ISSUE THAT IS BEING TRACKED BY THE GAP-ANALYSIS PIPELINE, ADD
 <b class="subhead">Current situation:</b>
 
 description_of_the_problem
+
+More:
+- [relevant_issue]()
+- [etc]()
+
+
+
+
+
+<b class="subhead">Tests & results:</b>
 
 <i>Interactive test</i>, [assertion](url)<br>
 <i>I18n test suite</i>, [section_head](url)
