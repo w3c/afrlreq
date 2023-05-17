@@ -1,6 +1,6 @@
 ---
 name: Add a new gap-analysis topic
-about: Only those in the eurlreq group should use this template.
+about: Only those in the afrlreq group should use this template.
 title: Brief_description_of_the_problem
 labels: gap
 assignees: ''
@@ -11,10 +11,29 @@ assignees: ''
 
 Brief_intro_illustrating_the_issue
 
+Point_to_relevant_issues_layout_requirements_etc
+- [xxx]()
+- [xxx]()
 
 
 IF THIS IS NOT THE ISSUE THAT IS BEING TRACKED BY THE GAP-ANALYSIS PIPELINE, ADD A POINTER TO THAT ISSUE.  THE INITIAL BRIEF INTRO SHOULD REMAIN, AND MAY BE TAILORED WITH EXAMPLES RELEVANT TO THIS LANGUAGE.  YOU MAY, OPTIONALLY, ALSO ADD OTHER DETAILS BELOW IF THEY ARE SPECIFIC TO THIS LANGUAGE. THEN ADD THIS:
 <b class="meta">For more details, see [this GitHub issue](https://github.com/w3c/XXXX/issues/XX), which is being used to track this gap. Please add any discussion there, and not to this issue.</b>
+
+
+
+
+<b class="subhead">Current situation:</b>
+
+description_of_the_problem
+
+<i>Interactive test</i>, [assertion](url)<br>
+<i>I18n test suite</i>, [section_head](url)
+
+Summarise_the_results_for_each_major_engine
+<span class="pass">Gecko</span>, <span class="partial">Blink</span>, and <span class="fail">Webkit</span>
+
+
+
 
 
 <b class="subhead">Specs:</b>
@@ -23,16 +42,13 @@ IF THIS IS NOT THE ISSUE THAT IS BEING TRACKED BY THE GAP-ANALYSIS PIPELINE, ADD
 [shortname](url_to_section) describe_what_it_says
 
 
-<b class="subhead">Tests & results:</b>
-<i>Interactive test</i>, [assertion](url)<br>
-<i>I18n test suite</i>, [section_head](url)
 
-Summarise_the_results_for_each_major_engine
-<span class="pass">Gecko</span>, <span class="partial">Blink</span>, and <span class="fail">Webkit</span>
 
 
 <b class="subhead">Browser bug reports:</b>
 [Gecko](url) • [Blink](url) • [Webkit](url)
+
+
 
 
 <b class="subhead">Priority:</b>
