@@ -24,11 +24,17 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 
 
 ### Documents
-- **Adlam Gap Analysis** • [DNOTE](https://www.w3.org/TR/adlm-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/adlm-gap) • [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/adlm-gap.html) • [*Discuss*](https://github.com/w3c/afrlreq/labels/s%3Aadlm) • [*Edit*](https://github.com/w3c/afrlreq/labels/doc%3Aadlm)
+- **Adlam Gap Analysis** • [DNOTE](https://www.w3.org/TR/adlm-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/adlm-gap) • [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/adlm-gap.html)
 
-- **N’Ko Gap Analysis** • [DNOTE](https://www.w3.org/TR/nkoo-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/nkoo-gap)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/nkoo-gap.html) • [*Discuss*](https://github.com/w3c/afrlreq/labels/s%3Ankoo) • [*Edit*](https://github.com/w3c/afrlreq/labels/doc%3Ankoo)
+- **N’Ko Gap Analysis** • [DNOTE](https://www.w3.org/TR/nkoo-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/nkoo-gap)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/nkoo-gap.html)
 
-- **N’Ko Layout Requirements** • [DNOTE](tbd) • [*Editor's draft*](https://w3c.github.io/afrlreq/nko/)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/nko) • [*Discuss*](https://github.com/w3c/afrlreq/labels/s%3Ankoo)
+- **N’Ko Layout Requirements** • [DNOTE](tbd) • [*Editor's draft*](https://w3c.github.io/afrlreq/nko/)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/nko)
+
+
+### Discussions
+- **Adlam** • [*General*](https://github.com/w3c/afrlreq/labels/s%3Aadlm) • [*Gap reports*](https://github.com/w3c/afrlreq/labels/doc%3Aadlm) • [*Questions*](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Aadlm+label%3Aquestion) • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aafrlreq+label%3Aspec-type-issue)
+
+- **N’Ko** • [*General*](https://github.com/w3c/afrlreq/labels/s%3Aankoo) • [*Gap reports*](https://github.com/w3c/afrlreq/labels/doc%3Ankoo) • [*Questions*](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Ankoo+label%3Aquestion) • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aafrlreq+label%3Aspec-type-issue)
 
 
 ### Feedback
