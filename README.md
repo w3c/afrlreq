@@ -32,9 +32,15 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 
 
 ### Discussions
-- **Adlam** • [*General*](https://github.com/w3c/afrlreq/labels/s%3Aadlm) • [*Gap reports*](https://github.com/w3c/afrlreq/labels/doc%3Aadlm) • [*Questions*](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Aadlm+label%3Aquestion) • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aafrlreq+label%3Aspec-type-issue)
+- **Adlam** • [*Questions*](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Aadlm+label%3Aquestion)
+ • [*Gap reports*](https://github.com/w3c/afrlreq/labels/doc%3Aadlm)
+ • [*Other*](https://github.com/w3c/afrlreq/issues?q=is%3Aopen+label%3As%3Aadlm+-label%3Aquestion)
+ • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aafrlreq+label%3Aspec-type-issue)
 
-- **N’Ko** • [*General*](https://github.com/w3c/afrlreq/labels/s%3Ankoo) • [*Gap reports*](https://github.com/w3c/afrlreq/labels/doc%3Ankoo) • [*Questions*](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Ankoo+label%3Aquestion) • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aafrlreq+label%3Aspec-type-issue)
+- **N’Ko** • [*Questions*](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Ankoo+label%3Aquestion)
+ • [*Gap reports*](https://github.com/w3c/afrlreq/labels/doc%3Ankoo)
+ • [*Other*](https://github.com/w3c/afrlreq/issues?q=is%3Aopen+label%3As%3Aadlm+-label%3Aquestion)
+ • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aafrlreq+label%3Aspec-type-issue)
 
 
 ### Feedback
