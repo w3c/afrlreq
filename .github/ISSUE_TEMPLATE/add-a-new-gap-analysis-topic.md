@@ -26,6 +26,8 @@ IF THIS IS NOT THE ISSUE THAT IS BEING TRACKED BY THE GAP-ANALYSIS PIPELINE, ADD
 
 Description_of_the_problem_and_summary_of_test_results
 
+<span class="pass">Gecko</span>, <span class="partial">Blink</span>, and <span class="fail">Webkit</span>
+
 More:
 - [relevant_issues]()
 - [etc]()
@@ -40,7 +42,6 @@ More:
 <i>I18n test suite</i>, [section_head](url)
 
 Summarise_the_results_for_each_major_engine_only_if_useful
-<span class="pass">Gecko</span>, <span class="partial">Blink</span>, and <span class="fail">Webkit</span>
 
 
 
