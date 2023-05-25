@@ -22,31 +22,33 @@ IF THIS IS NOT THE ISSUE THAT IS BEING TRACKED BY THE GAP-ANALYSIS PIPELINE, ADD
 
 
 
-<b class="subhead">Current situation:</b>
+### The Gap:
 
-description_of_the_problem
+Description_of_the_problem_and_summary_of_test_results
 
 More:
-- [relevant_issue]()
+- [relevant_issues]()
 - [etc]()
 
 
 
 
 
-<b class="subhead">Tests & results:</b>
+### Tests & results:
 
 <i>Interactive test</i>, [assertion](url)<br>
 <i>I18n test suite</i>, [section_head](url)
 
-Summarise_the_results_for_each_major_engine
+Summarise_the_results_for_each_major_engine_only_if_useful
 <span class="pass">Gecko</span>, <span class="partial">Blink</span>, and <span class="fail">Webkit</span>
 
 
 
 
 
-<b class="subhead">Specs:</b>
+### Spec status:
+Brief_description_of_what_spec_says_on_the_matter
+
 <i>Issue</i>, [XXX](url) Closed.
 
 [shortname](url_to_section) describe_what_it_says
@@ -55,13 +57,19 @@ Summarise_the_results_for_each_major_engine
 
 
 
-<b class="subhead">Browser bug reports:</b>
+### Action taken:
 [Gecko](url) • [Blink](url) • [Webkit](url)
 
 
 
 
-<b class="subhead">Priority:</b>
+### Outcomes
+Brief_description_of_developments
+
+
+
+
+### Priority:<
 Why_you_chose_the_priority
 
 
