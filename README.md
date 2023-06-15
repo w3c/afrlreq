@@ -28,7 +28,7 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 
 - **N’Ko Gap Analysis** • [DNOTE](https://www.w3.org/TR/nkoo-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/nkoo-gap)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/nkoo-gap.html)
 
-- **N’Ko Layout Requirements** • [DNOTE](tbd) • [*Editor's draft*](https://w3c.github.io/afrlreq/nko/)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/nko)
+- **N’Ko Layout Requirements** • [DNOTE](https://www.w3.org/TR/nkoo-gap/) • [*Editor's draft*](https://w3c.github.io/afrlreq/nko/)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/nko)
 
 
 ### Discussions
