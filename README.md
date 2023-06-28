@@ -20,7 +20,7 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 
 
 ### Key links
-[GitHub repo](https://github.com/w3c/afrlreq) • [Discussion threads](https://github.com/w3c/afrlreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=afrlreq) (with afrlreq filter) • [Charter](https://github.com/w3c/afrlreq/charter/)
+[GitHub repo](https://github.com/w3c/afrlreq) • [Discussion threads](https://github.com/w3c/afrlreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=afrlreq) (with afrlreq filter) • [Charter](https://www.w3.org/International/afrlreq/charter/)
 
 
 ### Documents
