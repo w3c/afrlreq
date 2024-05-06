@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Adlam Layout Requirements</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+  var respecConfig = {
+      // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
+      specStatus:           "ED",
+      //publishDate:  		"2020-06-16",
+      //previousPublishDate:  "2014-12-16",
+      //previousMaturity:  "FPWD",
+
+      noRecTrack:           true,
+      shortName:            "adlm",
+      copyrightStart:       "2018",
+      edDraftURI:           "https://w3c.github.io/afrlreq/adlm/",
+
+      // if this is a LCWD, uncomment and set the end of its review period
+      // lcEnd: "2009-08-05",
+
+      editors:  [
+        { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C", w3cid: 3439 }
+      ],
+
+
+      group:        "i18n",
+	  
+	  github: 		"w3c/sealreq",
+
+    };
+  </script>
+  <link rel="stylesheet" href="local.css">
+</head>
+
+<body>
+<div id="abstract">
+<p>This document describes or points to requirements for the layout and presentation of text in languages that use the Adlam script. The target audience is developers of Web standards and technologies, such as HTML, CSS, Mobile Web, Digital Publications, and Unicode, as well as implementers of web browsers, ebook readers, and other applications that need to render Adlam text.</p>
+</div>
+
+<div id="sotd">
+<p>This document describes the basic requirements for Adlam script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications about how to support users of Adlam script languages. Currently the document focuses on the Adlam script as used for Fula. The information here is developed in conjunction with a <a href="https://www.w3.org/TR/adlm-gap/">document that summarises gaps</a> in support on the Web for Adlam.</p>
+
+<p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/adlm/">African Layout Task Force</a>, part of the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
+
+<p>To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on using a URL.</p>
+</div>
+
+
+
+
+
+<section id="h_introduction">
+<h2>Introduction</h2>
+
+
+
+
+
+<section id="h_acknowledgements">
+<h3>Contributors</h3>
+
+<p>The initial version of this document was prepared by  Richard Ishida.</p>
+
+<!--p>Thanks to the following people who contributed information that is used in this document (contributors' names listed in in alphabetic order): Akshat Joshi, Kulpreet Chilana, Prashant Verma.</p-->
+
+<p data-lang="en">See also the <a href="https://github.com/w3c/afrlreq/graphs/contributors">GitHub contributors list</a> for the African Language Enablement project, and the <a href="https://github.com/w3c/afrlreq/issues?q=is%3Aopen+is%3Aissue">discussions related to the Adlam script</a>.</p>
+</section>
+
+
+
+
+
+
+<section id="h_about_this_document">
+<h3>About this document</h3>
+
+<p>The aim of this document is to describe the basic requirements for Adlam script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications, and for application developers, about how to support users of the Adlam script. The document currently focuses on texts using the Fula language.</p>
+</section>
+
+
+
+
+
+
+<section id="h_gap_analysis">
+<h3>Gap analysis</h3>
+
+<p>This document is pointed to by a separate document, <a href="https://www.w3.org/TR/adlm-gap/"><cite>Adlam Gap Analysis</cite></a>, which describes gaps in support for Adlam on the Web, and prioritises and describes the impact of those gaps on the user.</p>
+
+<p>Wherever an unsupported feature is indentified through the gap analysis process, the requirements for that feature need to be documented. The gap reports will typically point back to this document for more information.</p>
+
+<p>As gaps in support for Adlam are captured, the gaps can be brought to the attention of the relevant spec developer or the browser implementator community. The progress of such work is tracked in the <a href="https://github.com/w3c/i18n-activity/projects/3?card_filter_query=label%3Adoc%3Among">Gap Analysis Pipeline</a>.</p>
+
+<p>This document should contain no reference to a particular technology. For example, it should not say &quot;CSS does/doesn't do such and such&quot;, and it should not describe how a technology, such as CSS, should implement the requirements. It is technology agnostic, so that it will be evergreen, and it simply describes how the script works. The gap analysis document is the appropriate place for all kinds of technology-specific information.</p>
+</section>
+
+
+
+
+
+
+
+<section id="h_info_requests">
+<h3>Other related resources</h3>
+
+<p>To complement any content authored specifically for this document, the sections in the document also point to related, external information, tests, GitHub discussions, etc.</p>
+
+<p>The document <a href="https://www.w3.org/TR/typography/"><cite>Language enablement index</cite></a> points to this document and others, and provides a central location for developers and implementers to find information related to various scripts.</p>
+
+<p>The <abbr title="World Wide Web Consortium">W3C</abbr> also has a repository with discussion threads related to the Adlam script, including requests from developers to the user community for information about how scripts/languages work, and a notification system that tracks issues in <abbr title="World Wide Web Consortium">W3C</abbr> working groups related to the Adlam script. See a list of <a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3Aquestion+">unresolved questions</a> for Adlam experts. Each section below points to related discussions. See also the <a href="https://w3c.github.io/adlm/home">repository home page</a>.</p>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h_script_overview">
+<h2>Adlam Script Overview</h2>
+
+<p>The Adlam script is an <a class="termref" href="https://w3.org/TR/i18n-glossary/#alphabet">alphabet</a>, ie. a writing system in which both consonants and vowels are indicated.</p>
+
+<p>Modern Adlam can be written using a subset of the letters available in the Adlam Unicode block. The remainder are used for writing Todo, Sibe, and Manchu, or for writing foriegn words, especially in Tibetan and Sanskrit.</p>
+
+<p>Adlam text runs top to bottom in vertical lines and  (unusually) the lines flow <em>left to right</em>.</p>
+
+<p>The script is <a class="termref" href="https://w3.org/TR/i18n-glossary/#cursive">cursive</a>, ie. letters in a word are joined. All letters join both on the left and right.</p>
+
+<p>Words are separated by spaces, but also <em>contain</em> narrow spaces that precede suffixes and may produce shaping differences to the surrounding letters. These are part of the word, and the parts on either side should not be separated.</p>
+
+
+<p class="addToConsonants">Modern  Adlam uses 16 basic consonant letters and 11 more for representing foreign sounds.</p>
+In the Traditional Adlam alphabet  vowels are written using 8 vowel letters, including one for foreign sounds.
+<p class="addToVowels">Adlam has separate code points for each sound in Adlam, but many of these look indistinguishable from each other when rendered. This creates difficulties for novices to reproduce Adlam text without access to the source..</p>
+
+<p><a class="termref" href="https://r12a.github.io/scripts/adlm/fuf#diglossia">Vowel reduction</a> is a significant feature of Adlam. Non-initial short vowels are reduced to vestiges or to zero, and non-initial long vowels in the orthography are reduced to short vowel length.</p>
+
+<p><a class="termref" href="https://r12a.github.io/scripts/adlm/fuf#harmony">Vowel harmony</a> is another key feature, grouping vowels in a way that indicates a front or back position for the tongue root (ATR).</p>
+
+<p>The script is monocameral.</p>
+
+<p>There is a set of  Adlam digits.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+<h2 id="h_text_direction">Text direction</h2>
+
+
+<!--section id="h_vertical_text">
+<h3>Vertical text</h3>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#direction">Text direction</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+is%3Aopen+label%3Aquestion+label%3Ai%3Avertical_text">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Avertical_text">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+is%3Aissue+label%3Aafrlreq+label%3Ai%3Avertical-text">African script issues in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-vertical-text.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/text_direction_tests/issues?q=is%3Aissue++label%3Ah2%3Aadlam+label%3Adoc%3AVertical_text">Exploratory/interactive test repo</a></li>
+</ul>
+</dd>
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#vertical_text">Vertical text</a></li>
+</ul>
+</dd>
+
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#vertical_text">Vertical text</a></li>
+</ul>
+</dd>
+</dl>
+</section-->
+
+
+
+
+
+
+
+<section id="h_bidi_text">
+<h3>Bidirectional text</h3>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#direction">Text direction</a> • <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#digits">Digits</a></li>
+
+<li><cite><a target="_blank" href="https://www.w3.org/TR/html-bidi/">Additional Requirements for Bidi in HTML</a></cite></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+is%3Aopen+label%3Aquestion+label%3Ai%3Abidi_text">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Abidi_text">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+is%3Aissue+label%3Aafrlreq+label%3Ai%3Abidi-text">African script issues in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-bidi-text.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/text_direction_tests/issues?q=is%3Aissue++label%3Ah2%3Afula+label%3Adoc%3ABidirectional_text">Exploratory/interactive test repo</a></li>
+</ul>
+</dd>
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#bidi_text">Bidirectional text</a></li>
+</ul>
+</dd>
+
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#bidi_text">Bidirectional text</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h_shaping">
+<h2>Glyph shaping &amp; positioning</h2>
+
+
+<section id="h_writing_styles">
+<h3>Fonts &amp; font styles</h3>
+
+<aside class="prompts">How are fonts grouped into recognisable writing styles? How is each writing style used? Are OpenType features needed? What other font-related requirements and issue exist?</aside>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#writing_styles">Font styles</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Afonts">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Afonts">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Afonts">African script issues in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-fonts.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/glyph_character_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3AFonts">Exploratory/interactive test repo</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#fonts">Fonts</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#fonts">Fonts &amp; font styles</a></li>
+</ul>
+</dd>
+</dl>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="h_context">
+<h3>Context-based shaping &amp; positioning</h3>
+
+<aside class="prompts">Are special glyph forms needed, depending on the context in which a character is used? Do glyphs interact in some circumstances? Are there requirements to position diacritics or other items specially, depending on context? Does the script have multiple diacritics competing for the same location relative to the base?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#context">Context-based shaping &amp; positioning</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aglyphs">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aglyphs">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Aglyphs">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+</dd>
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#glyphs">Glyph shaping and positioning</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#glyphs">Context-based shaping &amp; positioning</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="h_cursive">
+<h3>Cursive text</h3>
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#cursive">Cursive shaping</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Acursive">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Acursive">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Acursive">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-cursive.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3ACursive_text">Exploratory/interactive test repo</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#cursive">Cursive text</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#cursive">Cursive text</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="h_fontstyle">
+<h3>Letterform slopes, weights, &amp; italics</h3>
+
+<aside class="prompts">Are italicisation, bolding, oblique, etc relevant? Do italic fonts lean in the right direction? Is synthesised italicisation problematic? Are there other problems relating to bolding or italicisation - perhaps relating to generalised assumptions of applicability?</aside>
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#fontstyle">Letterform slopes, weights, &amp; italics</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aletterforms">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aletterforms">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Afont-style+">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-letterforms.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3ALetterforms">Exploratory/interactive test repo</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#font_style">Font styles, weight, etc</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#font_style">Letterform slopes, weights, &amp; italics</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!--section class="h_transforms">
+<h3>Case &amp; other character transforms</h3>
+
+<aside class="prompts">Is the orthography bicameral? Are there other character pairings, especially when transforms are needed to convert between the two?</aside>
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#transforms">Case &amp; other character transforms</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Atransforms">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Atransforms">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Atransforms">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-transforms.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3ATransforms">Exploratory/interactive test repo</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#transforms">Font styles, weight, etc</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#transforms">Letterform slopes, weights, &amp; italics</a></li>
+</ul>
+</dd>
+</dl>
+</section-->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="h_graphemes">
+<h2>Typographic units</h2>
+
+
+
+
+<section class="h_transforms">
+<h3>Characters &amp; encoding</h3>
+
+
+<aside class="prompts">Most languages are now supported by Unicode, but there are still occasional issues. In particular, there may be issues related to ordering of characters, or competing encodings (as in Myanmar), or standardisation of variation selectors or the encoding model (as in Adlam).</aside>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf.html#vowels" class="external">Vowels</a> 
+• <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf.html#consonants" class="external">Consonants</a>
+<!--• <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf.html#encoding" class="external">Encoding choices</a-->
+</li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aencoding">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aencoding">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Acharset">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#charset">Characters &amp; encoding</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#charset">Characters &amp; encoding</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+<section class="h_segmentation">
+<h3>Grapheme/word segmentation &amp; selection</h3>
+
+<aside class="prompts">Do Unicode grapheme clusters appropriately segment character units for the script? Are there special requirements for the following operations: forwards/backwards deletion, cursor movement &amp; selection, character counts, searching &amp; matching, text insertion, line-breaking, justification, case conversions, sorting? Are words separated by spaces, or other characters? Are there special requirements when double-clicking on the text? Are words hyphenated?</aside>
+
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf.html#word" class="external">Word boundaries</a><!-- • 
+<a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf.html#graphemes" class="external">Graphemes</a>--></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Asegmentation">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Asegmentation">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Asegmentation">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-grapheme-word-segmentation.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/glyph_character_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3AGrapheme_word">Exploratory/interactive test repo</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#segmentation">Grapheme/word segmentation &amp; selection</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#segmentation">Grapheme/word segmentation &amp; selection</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h_characters_and_phrases">
+<h2>Punctuation &amp; inline features</h2>
+
+<aside class="prompts">This section describes typographic features related to word boundaries, phrase &amp; section boundaries, bracketed text, quotations &amp; citations, emphasis, abbreviation, ellipsis &amp; repetition, inline notes &amp; annotations, other punctuation, and other inline text decoration.</aside>
+
+
+
+
+
+
+
+
+
+<section id="h_phrase">
+<h3>Phrase &amp; section boundaries</h3>
+
+
+<aside class="prompts">What characters are used to indicate the boundaries of phrases, sentences, and sections? What about other punctuation, such as dashes, connectors, separators, etc?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#phrase" class="external">Phrase &amp; section boundaries</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Apunctuation_etc">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Apunctuation_etc">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Apunctuation-etc">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#punctuation_etc">Inline features &amp; punctuation</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#punctuation_etc">Phrase &amp; section boundaries</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h_quotations">
+<h3>Quotations &amp; citations</h3>
+
+
+<aside class="prompts">What characters are used to indicate quotations? Do quotations within quotations use different characters? What characters are used to indicate dialogue? Are the same mechanisms used to cite words, or for scare quotes, etc? What about citing book or article names?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#quotations" class="external">Quotations &amp; citations</a></li>
+
+<!--<li><cite>Wikipedia</cite>: <a  target="_blank" href="https://en.wikipedia.org/wiki/Quotation_mark" class="external">Quotation mark</a></li>-->
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aquotations">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aquotations">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Aquotations">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-quotations.html#fula">Exploratory/interactive test results</a>
+
+<li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3AQuotations">Exploratory/interactive test repo</a></li>
+</li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#quotations">Quotations</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#quotations">Quotations &amp; citations</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_emphasis">
+<h3>Emphasis &amp; highlighting</h3>
+
+
+<aside class="prompts">How are emphasis and highlighting achieved? If lines or marks are drawn alongside, over or through the text, do they need to be a special distance from the text itself? Is it important to skip characters when underlining, etc? How do things change for vertically set text?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li>tbd<!--<cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#emphasis">Emphasis &amp; highlighting</a>--></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aemphasis">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aemphasis">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Aemphasis">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-emphasis.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3AEmphasis">Exploratory/interactive test repo</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#punctuation_etc">Inline features &amp; punctuation</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#emphasis">Emphasis &amp; highlighting</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_abbrev">
+<h3>Abbreviation, ellipsis &amp; repetition</h3>
+
+
+<aside class="prompts">What characters or other methods are used to indicate abbreviation, ellipsis &amp; repetition?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li>tbd<!--<cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#abbrev">Abbreviation, ellipsis &amp; repetition</a>--></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aabbrev">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aabbrev">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Aabbrev">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li>tbd</li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li>tbd</li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_inlinenotes">
+<h3>Inline notes &amp; annotations</h3>
+
+
+<aside class="prompts">What mechanisms, if any, are used to create *inline* notes and annotations? (For referent-type notes such as footnotes, see further down.)</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li>tbd<!--<cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#inlinenotes">Inline notes &amp;  annotations</a>--></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Ainline_notes">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Ainline_notes">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Ainline_notes">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-inline-notes-annotations.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3AInline_notes_annotations">Exploratory/interactive test repo</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#inline_notes">Inline notes &amp; annotations</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#inline_notes">Inline notes &amp; annotations</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_otherinline">
+<h3>Other inline features</h3>
+
+
+<aside class="prompts">Any other form of highlighting or marking of text, such as underlining, numeric overbars, etc. What characters or methods (eg. text decoration) are used to convey information about a range of text? If lines are drawn alongside, over or through the text, do they need to be a special distance from the text itself? Is it important to skip characters when underlining, etc? How do things change for vertically set text?  Are there other punctuation marks that were not covered in preceding sections?</aside>
+
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li>tbd<!--<cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#otherinline">Other inline features</a>--></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Atext_decoration">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Atext_decoration">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Aafrlreq+label%3Ai%3Atext-decoration">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-text-decoration.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3Ah2%3Aadlam+label%3Adoc%3AText_decoration">Exploratory/interactive test repo</a></li>
+
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/line-decoration">CSS3 Text decoration, Line decoration</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#punctuation_etc">Inline features &amp; punctuation</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#text_decoration">Other inline features</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h_lines_and_paragraphs">
+<h2>Line &amp; paragraph layout</h2>
+
+
+<aside class="prompts">This section describes typographic features related to line breaking &amp; hyphenation, text alignment &amp; justification, text spacing, baselines, line height, counters, lists, and styling initials.</aside>
+
+<section id="h_line_breaking">
+<h3>Line breaking &amp; hyphenation</h3>
+
+<aside class="prompts">Are there special rules about the way text wraps when it hits the end of a line? Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan and Javanese)? What characters should not appear at the end or start of a line, and what should be done to prevent that? Is hyphenation used, or something else? What rules are used? What difficulties exist?</aside>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd class="reqs">
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#linebreak">Line breaking &amp; hyphenation</a></li>
+
+<li><a target="_blank" href="https://www.w3.org/International/articles/typography/linebreak">Approaches to line-breaking</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd class="gh_discussions">
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aline_breaking+">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aline_breaking">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Aline-breaking">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd class="tests">
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-line-breaking.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue++label%3Ah2%3Aadlam+label%3Adoc%3ALine_breaking">Exploratory/interactive test repo</a></li>
+</ul>
+</dd>
+
+<dt>Gap analysis</dt>
+<dd class="gap_analysis">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#line_breaking"> Line breaking</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#line_breaking">Line breaking</a> • <a target="_blank" href="https://www.w3.org/TR/typography/#hyphenation">Hyphenation</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+<section id="h_alignment">
+<h3>Text alignment &amp; justification</h3>
+
+<aside class="prompts">Does text in a paragraph needs to have flush lines down both sides? Does the script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Does the script shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? What about paragraph indents?</aside>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#justification">Text alignment &amp; justification</a></li>
+
+<li><a target="_blank" href="https://www.w3.org/International/articles/typography/justification">Approaches to full justification</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Ajustification+">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Ajustification">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Ajustification">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-text-alignment-justification.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue++label%3Ah2%3Aadlam+label%3Adoc%3AText_alignment_justification">Exploratory/interactive test repo</a></li>
+</ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#justification"> Text alignment &amp; justification</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#justification">Text alignment &amp; justification</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_spacing">
+<h3>Text spacing</h3>
+
+<aside class="prompts">This section looks at ways in which spacing is applied between characters over and above that which is introduced during justification. For example, does the orthography create emphasis or other effects by spacing out the words, letters or syllables in a word? (For justification related spacing, see Text alignment &amp; justification, above).</aside>
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li>tbd<!--<cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#spacing">Text spacing</a>--></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aspacing">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aspacing">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Aspacing">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-letter-spacing.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3AText_spacing">Exploratory/interactive test repo</a></li>
+</ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#spacing">Letter spacing</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#spacing">Text spacing</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_baselines">
+<h3>Baselines, line height, etc.</h3>
+
+<aside class="prompts">Does the script have special requirements for baseline alignment between mixed scripts and in general? Is line height special for this script? Are there other aspects that affect line spacing, or positioning of items vertically within a line?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#baselines">Baselines, line height, etc.</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Abaselines">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Abaselines">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Abaselines">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#baselines"> Baselines, line-height, etc</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#baselines">Baselines, line-height, etc</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_counters">
+<h3>Lists, counters, etc.</h3>
+
+<aside class="prompts">Are there list or other counter styles in use? If so, what is the format used? Do counters need to be upright in vertical text? Are there other aspects related to counters and lists that need to be addressed?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite> Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#lists">Counters, lists, etc.</a></li>
+<li><cite> Ready-made Counter Styles</cite>: <a target="_blank" href="https://www.w3.org/TR/predefined-counter-styles/#adlam-styles">Adlam</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Alists">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Alists">All Adlam issues on this topic in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Alists">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-lists-counters-etc.html#fula">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue++label%3Ah2%3Aadlam+label%3Adoc%3ALists_counters_etc">Exploratory/interactive test repo</a></li>
+
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/predefined-counter-styles#complexlimited">I18n test suite: CSS3 Counter Styles, predefined styles</a></li>
+
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/custom-counter-styles#chinese">I18n test suite: Custom counter styles</a></li>
+</ul>
+
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#lists"> Lists, counters, etc</a></li>
+</ul>
+</dd>
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#lists">Lists, counters, etc</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_initials">
+<h3>Styling initials</h3>
+
+<aside class="prompts">Does the script use special styling of the initial letter of a line or paragraph, such as for drop caps or similar? How about the size relationship between the large letter and the lines alongide? where does the large letter anchor relative to the lines alongside? is it normal to include initial quote marks in the large letter? is the large letter really a syllable? Are dropped, sunken, and raised types found? etc.</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#initials">Styling initials</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Ainitials">Open requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Ainitials">All Adlam issues on this topic in the afrlreq repo</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Ainitials">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-styling-initials#hani">Exploratory/interactive test results</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+label%3Ah2%3Aadlam+label%3Adoc%3AStyling_initials">Exploratory/interactive test repo</a></li>
+</ul>
+
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#initials">Styling initials</a></li>
+</ul>
+</dd>
+
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#initials">Styling initials</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h_page">
+<h2>Page &amp; book layout</h2>
+
+
+
+
+<section id="h_generallayout">
+<h3>General page layout &amp; progression</h3>
+
+<aside class="prompts">How are the main text area and ancilliary areas positioned and defined? Are there any special requirements here, such as dimensions in characters for the Japanese kihon hanmen? The book cover for scripts that are read right-to-left scripts is on the right of the spine, rather than the left. When content can flow vertically and to the left or right, how to specify the location of objects, text, etc. relative to the flow? Do tables and grid layouts work as expected? How do columns work in vertical text? Can you mix block of vertical and horizontal text? Does text scroll in a different direction?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#generallayout">General page layout &amp; progression</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Apage_layout">Open requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Apage_layout">All Adlam issues on this topic in the afrlreq repo</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Apage_layout">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#page_layout">General page layout &amp; progression</a></li>
+</ul>
+</dd>
+
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#page_layout">General page layout &amp; progression</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<!--section id="h_grids_tables">
+<h3>Grids &amp; tables</h3>
+
+<aside class="prompts">Does the script have special requirements for character grids or tables?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#grids">Grids &amp; tables</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Agrids_tables">Open requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Agrids_tables">All Adlam issues on this topic in the afrlreq repo</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Agrids_tables">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li>tbd</li>
+</ul>
+</dd>
+
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#grids_tables">Grids &amp; tables</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="h_headers_footers">
+<h3>Page headers, footers, etc</h3>
+
+<aside class="prompts">Are there special conventions for page numbering, or the way that running headers and the like are handled?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#footnotes">Notes, footnotes, etc</a></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Aheaders_footers">Open requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Aheaders_footers">All Adlam issues on this topic in the afrlreq repo</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Aafrlreq+label%3Ai%3Aheaders_footers">African script issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#headers_footers">Page headers, footers, etc</a></li>
+</ul>
+</dd>
+
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#headers_footers">Page headers, footers, etc</a></li>
+</ul>
+</dd>
+</dl>
+</section-->
+
+
+
+
+
+
+
+<section id="h_interaction">
+<h3>Forms &amp; user interaction</h3>
+
+<aside class="prompts">Are vertical form controls needed? Are scroll bars in an unusual position? Other special requirements for user interaction?</aside>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li>tbd<!--<cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#interaction">Forms &amp; user interaction</a>--></li>
+</ul>
+</dd>
+
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen+label%3Ai%3Ainteraction">Open requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Ai%3Ainteraction">All Adlam issues on this topic in the afrlreq repo</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=is%3Aissue+label%3Al%3Aafrlreq+label%3Ai%3Ainteraction">Adlam issues on this topic in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>Exploratory/interactive test results (tbc)</li>
+
+<li>Exploratory/interactive test repo (tbc)</li>
+</ul>
+
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/#interaction">Forms &amp; user interaction</a></li>
+</ul>
+</dd>
+
+
+<dt>LE Index</dt>
+<dd class="le_index">
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/typography/#interaction">Forms &amp; user interaction</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="a_changes" class="appendix">
+<h2>Change log</h2>
+
+<ul>
+<li>Added links to all sections where additional information is available.</li>
+<li>Updated the script overview section.</li>
+<li>Removed all text that was simply a copy of the text at r12a.github.io.</li>
+<li>Created 'Contributors' section to list contributors other than the editor.</li>
+<li>Updated the front matter.</li>
+</ul>
+</section>
+</body>
+</html>
