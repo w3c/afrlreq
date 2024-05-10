@@ -1,3 +1,6 @@
 # ECHIDNA configuration
 index.html?specStatus=DNOTE&shortName=nkoo-lreq respec
 local.css
+webfonts/notosansnko-regular-webfont.woff2
+webfonts/notosansnkounjoined-bold-webfont.woff2
+webfonts/notosansnkounjoined-regular-webfont.woff2
