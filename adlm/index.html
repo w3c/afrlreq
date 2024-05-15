@@ -41,6 +41,8 @@
 <p>This document describes or points to requirements for the layout and presentation of text in languages that use the Adlam script. The target audience is developers of Web standards and technologies, such as HTML, CSS, Mobile Web, Digital Publications, and Unicode, as well as implementers of web browsers, ebook readers, and other applications that need to render Adlam text.</p>
 </div>
 
+
+
 <div id="sotd">
 <p>This document describes the basic requirements for Adlam script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications about how to support users of Adlam script languages. Currently the document focuses on the Adlam script as used for Fula. The information here is developed in conjunction with a <a href="https://www.w3.org/TR/adlm-gap/">document that summarises gaps</a> in support on the Web for Adlam.</p>
 
@@ -48,6 +50,12 @@
 
 <p>To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on using a URL.</p>
 </div>
+
+
+<div id="linkWarning"><span id="closeLinkWarning" onClick="this.parentNode.style.display='none'">X</span> Some links on this page point to repositories or pages to which information will be added over time. Initially, the link may produce no results, but as issues, tests, etc. are created they will show up.</div>
+
+
+
 
 
 
@@ -58,14 +66,12 @@
 
 
 
-
-
 <section id="h_acknowledgements">
 <h3>Contributors</h3>
 
 <p>The initial version of this document was prepared by  Richard Ishida.</p>
 
-<!--p>Thanks to the following people who contributed information that is used in this document (contributors' names listed in in alphabetic order): Akshat Joshi, Kulpreet Chilana, Prashant Verma.</p-->
+<!--p>Thanks to the following people who contributed information that is used in this document (contributors' names listed in in alphabetic order): .</p-->
 
 <p data-lang="en">See also the <a href="https://github.com/w3c/afrlreq/graphs/contributors">GitHub contributors list</a> for the African Language Enablement project, and the <a href="https://github.com/w3c/afrlreq/issues?q=is%3Aopen+is%3Aissue">discussions related to the Adlam script</a>.</p>
 </section>
@@ -156,6 +162,64 @@ In the Traditional Adlam alphabet  vowels are written using 8 vowel letters, inc
 <p>The script is monocameral.</p>
 
 <p>There is a set of  Adlam digits.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+<h2 id="h_all_topics">All topics</h2>
+
+
+<aside class="prompts">Links reveal results regardless of topic, for issues, tests, and samples. </aside>
+
+
+
+
+<dl class="reslinks">
+<dt>GitHub discussions</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff+label%3Aquestion+is%3Aopen">Open requests for information</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/afrlreq/issues?q=is%3Aissue+label%3Al%3Aff">All Adlam issues in the afrlreq repo</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=is%3Aissue+label%3Aafrlreq">All West African language issues in W3C specs</a></li>
+</ul>
+</dd>
+
+
+<dt>Type samples</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/type-samples/issues?q=is%3Aissue+is%3Aopen+label%3As%3Aadlm">W3C type samples</a></li>
+
+<li><a target="_blank" href="https://github.com/r12a/typesamples/issues?q=is%3Aopen+label%3As.adlm">r12a type samples</a></li>
+</ul>
+</dd>
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/text_direction_tests/issues?q=is%3Aissue+label%3Ah2%3AAdlam">Text direction</a> • <a target="_blank" href="https://github.com/w3c/glyph_character_tests/issues?q=is%3Aissue+label%3Ah2%3AAdlam">Glyphs &amp; characters</a> • <a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+label%3Ah2%3AAdlam">Punctuation &amp; inline</a> • <a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+label%3Ah2%3AAdlam">Lines &amp; paragraphs</a></li>
+</ul>
+
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/adlm-gap/">Adlam</a></li>
+</ul>
+</dd>
+</dl>
 </section>
 
 
@@ -323,6 +387,10 @@ In the Traditional Adlam alphabet  vowels are written using 8 vowel letters, inc
 <dd>
 <ul>
 <li><cite>Pular (Adlam) Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/adlm/fuf#writing_styles">Font styles</a></li>
+
+<li><a target="_blank" href="https://github.com/w3c/i18n-discuss/wiki/Generic-font-families">Generic font families</a> (unjoined)</li>
+
+<li><a target="_blank" href="https://r12a.github.io/scripts/fontlist/index.html?script=adlm">List of system fonts</a></li>
 </ul>
 </dd>
 
@@ -681,6 +749,8 @@ In the Traditional Adlam alphabet  vowels are written using 8 vowel letters, inc
 • <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf.html#consonants" class="external">Consonants</a>
 <!--• <a  target="_blank" href="https://r12a.github.io/scripts/adlm/fuf.html#encoding" class="external">Encoding choices</a-->
 </li>
+
+<li><a target="_blank" href="https://r12a.github.io/app-charuse/index.html?language=fuf-adlm">Character usage</a></li>
 </ul>
 </dd>
 
@@ -776,6 +846,15 @@ In the Traditional Adlam alphabet  vowels are written using 8 vowel letters, inc
 </ul>
 </dd>
 -->
+
+
+<dt>Tools</dt>
+<dd>
+<ul>
+<li><a href="https://r12a.github.io/scripts/apps/graphemes/index.html" target="_blank">Grapheme segmenter</a></li>
+</ul>
+</dd>
+
 
 <dt>Tests</dt>
 <dd>
