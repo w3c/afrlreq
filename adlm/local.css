@@ -1,26 +1,5 @@
-@font-face {
-    font-family: 'Noto Serif Gurmukhi WF';
-    src: url('https://r12a.github.io/shared/webfonts/notoserifgurmukhi-regular-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-	}
-@font-face {
-    font-family: 'Noto Sans Gurmukhi WF';
-    src: url('https://r12a.github.io/shared/webfonts/notosansgurmukhi-regular-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-	}
-
-[lang=pa] { 
-    font-family: 'Noto Serif Gurmukhi WF', serif;
-    font-size: 200%;
-    }
-
-
-
 
 h2 {
-	margin-top: 4em !important;
 	margin-bottom: 0em !important;
 	}
 .head h2, #abstract h2, #sotd h2 {
@@ -182,14 +161,10 @@ dl.reslinks {
 
 
 
-
 #linkWarning {
-    position:fixed;
-    bottom:0;
     margin-inline: 2.5%;
     background-color: antiquewhite;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    border-radius: 1em;
     font-size: 90%;
     padding: 1em;
     z-index: 2000;
@@ -201,6 +176,14 @@ dl.reslinks {
     cursor:pointer;
     color: #999;
     }
+
+
+
+.variable.empty, .variable.empty:visited {
+    color: gray;
+    font-style: italic;
+    }
+
 
 
 
