@@ -23,14 +23,14 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 [GitHub repo](https://github.com/w3c/afrlreq) • [Discussion threads](https://github.com/w3c/afrlreq/issues) • [Charter](https://www.w3.org/International/afrlreq/charter/)
 
 
-### LReq Documents
+### Resource & requirement docs
 - **Adlam Script Resources** • [DNOTE](https://www.w3.org/TR/adlm-lreq/) • [*Editor's draft*](https://w3c.github.io/afrlreq/adlm/)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/adlm)
 
 - **N’Ko Script Resources** • [DNOTE](https://www.w3.org/TR/nkoo-lreq/) • [*Editor's draft*](https://w3c.github.io/afrlreq/nko/)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/nko)
 
 
 
-### Gap Documents
+### Gap documents
 - **Adlam Gap Analysis** • [DNOTE](https://www.w3.org/TR/adlm-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/adlm-gap) • [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/adlm-gap.html)
 
 - **N’Ko Gap Analysis** • [DNOTE](https://www.w3.org/TR/nkoo-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/nkoo-gap)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/nkoo-gap.html)
