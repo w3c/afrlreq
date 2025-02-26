@@ -72,7 +72,7 @@ You can participate in the work at various levels. In order of increasing commit
 
 ### Links to practical help
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-africa/)
-- [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
+- [Writing i18n tests](https://github.com/w3c/i18n-tests/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html) (See also the links for editors below)
 - Action tracker (tbd)
 - Meeting info (tbd)
