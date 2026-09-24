@@ -37,7 +37,7 @@ See also work on [Arabic & Persian](https://github.com/w3c/alreq) and [Amharic &
 - **Gap Analysis** • [DNOTE](https://www.w3.org/TR/nkoo-gap) • [*Editor's draft*](https://www.w3.org/International/afrlreq/gap-analysis/nkoo-gap)• [*Latest commits*](https://github.com/w3c/afrlreq/commits/gh-pages/gap-analysis/nkoo-gap.html)
 - **Discussions** • [*Questions*](https://github.com/w3c/afrlreq/issues?q=is%3Aissue+is%3Aopen+label%3As%3Ankoo+label%3Aquestion)
  • [*Gap reports*](https://github.com/w3c/afrlreq/labels/doc%3Ankoo)
- • [*Other*](https://github.com/w3c/afrlreq/issues?q=is%3Aopen+label%3As%3Aadlm+-label%3Aquestion)
+ • [*Other*](https://github.com/w3c/afrlreq/issues?q=is%3Aopen+-label%3Aquestion+label%3As%3Ankoo)
  • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aafrlreq+label%3Aspec-type-issue)
 
 
